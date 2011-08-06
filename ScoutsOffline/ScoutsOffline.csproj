@@ -75,7 +75,9 @@
     <Compile Include="Http\PostRequest.cs" />
     <Compile Include="Http\Request.cs" />
     <Compile Include="Sol\CsvConverter.cs" />
+    <Compile Include="Sol\FakeScoutsOnLine.cs" />
     <Compile Include="Sol\Member.cs" />
+    <Compile Include="Sol\MembersCsv.cs" />
     <Compile Include="Sol\Role.cs" />
     <Compile Include="Sol\ScoutsOnLine.cs" />
     <EmbeddedResource Include="Form1.resx">

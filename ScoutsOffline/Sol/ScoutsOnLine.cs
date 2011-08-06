@@ -13,6 +13,7 @@ namespace ScoutsOffline.Sol
     {
         private Browser httpBrowser;
         public const string BaseUrl = "https://sol.scouting.nl/";
+        public delegate void MembersAvailable(List<Member> members, int step, int count);
 
         List<Role> roles = null;
 
@@ -70,25 +71,16 @@ namespace ScoutsOffline.Sol
             
         }
 
-        //public List<Member> GetMembers()
-        //{
-        //    Dictionary<int, Member> membersDict = new Dictionary<int,Member>();
-        //    foreach (var role in roles)
-        //    {
-        //        SwitchRole(role);
-        //        var request = new Request(ResolveUrl("index.php?task=ma_person&action=list"));
-        //        var response = httpBrowser.DoRequest(request);
-        //        response.Save(@"C:\members" + role.Id + ".html");
-        //        //var response = Response.FromFile(@"C:\members.html");
-        //        OnResponse(response);
-        //        var members = ParseFilterTable(response);
-        //        foreach (var member in members)
-        //        {
-        //            membersDict[member.Id] = member;
-        //        }
-        //    }
-        //    return membersDict.Values.OrderBy(m => m.Lid).ToList();
-        //}
+        public void StartGetMembers(MembersAvailable callback)
+        {
+            int i = 0;
+            foreach (var role in this.roles)
+            {
+                SwitchRole(role);
+                var members = GetSelection();
+                callback(members, i++, roles.Count);
+            }
+        }
 
         public List<Member> GetSelection()
         {
@@ -106,27 +98,10 @@ namespace ScoutsOffline.Sol
             //var request = new Request(ResolveUrl("index.php?task=sel_selection&action=perform&button=post&sel_id=1216"));
             var response = httpBrowser.DoRequest(request);
             var contents = response.Content;
-            var csvReader = new CsvConverter(contents);
 
-            List<Member> members = new List<Member>();
-            var keys = csvReader.GetKeys();
-            while (true) {
-                List<string> values = csvReader.GetValues();
-                if (values == null) break;
-                Member member = new Member();
-                Type memberType = typeof(Member);
-                for (int i = 0; i < keys.Count; i++)
-                {
-                    var key = keys[i].Replace(" ", "");
-                    var property = memberType.GetProperty(key);
-                    if (property != null)
-                    {
-                        property.SetValue(member, values[i], null);
-                    }
-                }
-                members.Add(member);
-            }
-            return members;
+            var csvReader = new CsvConverter(contents);
+            var membersCsv = new MembersCsv();
+            return membersCsv.GetMembers(csvReader);
         }
 
         private List<Member> GetMemberPage()
