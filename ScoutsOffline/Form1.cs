@@ -12,6 +12,8 @@ namespace ScoutsOffline
 {
     public partial class Form1 : Form
     {
+        List<Member> members;
+
         public Form1()
         {
             InitializeComponent();
@@ -32,8 +34,25 @@ namespace ScoutsOffline
             ((Login)sender).Hide();
 
             var sol = new ScoutsOnLine();
-            sol.OnResponse(null);
-            // sol.Authenticate(eArgs.username, eArgs.password);
+            sol.Authenticate(eArgs.username, eArgs.password);
+            members = sol.GetSelection();
+            dataGridView1.DataSource = members;
+            // var lidLink = dataGridView1.Columns["LidLink"];
+            // dataGridView1.Columns.Remove(lidLink);
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var members = (List<Member>)dataGridView1.DataSource;
+            var member = members[e.RowIndex];
+            // var link = member.LidLink;
+            // System.Diagnostics.Process.Start(link);
+        }
+
+        private void SearchBox_TextChanged(object sender, EventArgs e)
+        {
+            var searchtext = SearchBox.Text;
+            dataGridView1.DataSource = members.Where(m => m.Matches(searchtext)).ToList();
         }
     }
 }

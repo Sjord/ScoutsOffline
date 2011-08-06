@@ -10,24 +10,38 @@ namespace ScoutsOffline.Http
     public class Response
     {
         private WebResponse response;
+        private Stream _stream;
+
+        private Response()
+        {
+        }
 
         public Response(WebResponse response)
         {
             this.response = response;
-        }
+            this._stream = response.GetResponseStream();
 
-        public Stream GetStream()
-        {
-            return response.GetResponseStream();
-        }
-
-        public string GetContent()
-        {
             using (var stream = this.response.GetResponseStream())
-            using (var reader = new StreamReader(stream))
+            using (var reader = new StreamReader(stream, Encoding.UTF8))
             {
-                return reader.ReadToEnd();
+                Content = reader.ReadToEnd();
             }
+        }
+
+        public string Content;
+
+        internal void Save(string path)
+        {
+            using (var writer = new StreamWriter(path))
+                writer.Write(Content);
+        }
+
+        internal static Response FromFile(string path)
+        {
+            var result = new Response();
+            using (var reader = new StreamReader(path))
+                result.Content = reader.ReadToEnd();
+            return result;
         }
     }
 }

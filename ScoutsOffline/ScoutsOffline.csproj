@@ -74,7 +74,13 @@
     <Compile Include="Http\Browser.cs" />
     <Compile Include="Http\PostRequest.cs" />
     <Compile Include="Http\Request.cs" />
+    <Compile Include="Sol\CsvConverter.cs" />
+    <Compile Include="Sol\Member.cs" />
+    <Compile Include="Sol\Role.cs" />
     <Compile Include="Sol\ScoutsOnLine.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>

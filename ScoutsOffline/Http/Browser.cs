@@ -30,7 +30,6 @@ namespace ScoutsOffline.Http
                     stream.Write(contentBytes, 0, contentBytes.Length);
                 }
             }
-
             var webResponse = webRequest.GetResponse();
             return new Response(webResponse);
         }
