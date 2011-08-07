@@ -21,7 +21,7 @@ namespace ScoutsOffline.Http
                 var pair = string.Format("{0}={1}", HttpUtility.UrlEncode(keyvalue.Key), HttpUtility.UrlEncode(keyvalue.Value.ToString()));
                 pairs.Add(pair);
             }
-            return string.Join("&", pairs);
+            return string.Join("&", pairs.ToArray());
         }
     }
 }
