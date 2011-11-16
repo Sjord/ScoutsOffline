@@ -8,12 +8,13 @@ using System.Text;
 using System.Windows.Forms;
 using ScoutsOffline.Sol;
 using System.Diagnostics;
+using ScoutsOffline.Model;
 
 namespace ScoutsOffline
 {
     public partial class Form1 : Form
     {
-        List<Member> members = new List<Member>();
+        Repository repository;
 
         public Form1()
         {
@@ -23,6 +24,13 @@ namespace ScoutsOffline
         protected override void OnShown(EventArgs e)
         {
             base.OnShown(e);
+
+            /*
+            var username = "Sjoerder";
+            repository = new Repository(username);
+            FilterDataSource();
+            return;
+             */
 
             var login = new Login();
             login.LoginClick += OnLoginClick;
@@ -37,6 +45,10 @@ namespace ScoutsOffline
             var sol = new ScoutsOnLine();
             if (sol.Authenticate(eArgs.username, eArgs.password))
             {
+                var username = eArgs.username;
+                repository = new Repository(username);
+                FilterDataSource();
+
                 progressBar1.Style = ProgressBarStyle.Marquee;
                 var getAllMembers = new GetAllMembersDelegate(GetAllMembers);
                 getAllMembers.BeginInvoke(sol, null, null);
@@ -56,9 +68,8 @@ namespace ScoutsOffline
 
         private void AddMembers(List<Member> newMembers, int step, int count)
         {
-            var allMembers = new HashSet<Member>(this.members);
-            allMembers.UnionWith(newMembers);
-            this.members = allMembers.OrderBy(m => m.Lidachternaam).ThenBy(m => m.Lidvoornaam).ToList();
+            repository.Model.MemberList.UpdateWith(newMembers);
+            repository.Store();
             
             if (dataGridView1.InvokeRequired)
             {
@@ -103,7 +114,7 @@ namespace ScoutsOffline
             var searchtext = SearchBox.Text;
             if (searchtext == string.Empty)
             {
-                dataGridView1.DataSource = this.members;
+                dataGridView1.DataSource = this.repository.Model.MemberList.Members;
             }
             else
             {
@@ -114,11 +125,44 @@ namespace ScoutsOffline
                 }
                 else
                 {
-                    source = this.members;
+                    source = this.repository.Model.MemberList.Members;
                 }
                 var keywords = searchtext.Split(new [] {' '}, StringSplitOptions.RemoveEmptyEntries);
                 dataGridView1.DataSource = source.Where(m => m.Matches(keywords)).ToList();
                 _previousSearchValue = searchtext;
+            }
+        }
+
+        private void MarkeerLid_Click(object sender, EventArgs e)
+        {
+            List<int> rowIndices = new List<int>();
+            foreach (DataGridViewCell cell in dataGridView1.SelectedCells)
+            {
+                var row = cell.RowIndex;
+                if (!rowIndices.Contains(row))
+                    rowIndices.Add(row);
+            }
+
+            var members = (List<Member>)dataGridView1.DataSource;
+            foreach (var index in rowIndices)
+            {
+                var member = members[index];
+                repository.Model.MemberList.ToggleSelect(member);
+            }
+            dataGridView1.Refresh();
+        }
+
+        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            var members = (List<Member>)dataGridView1.DataSource;
+            var member = members[e.RowIndex];
+            if (member.Selected)
+            {
+                e.CellStyle.BackColor = Color.LightYellow;
+            }
+            else
+            {
+                e.CellStyle.BackColor = Color.White;
             }
         }
     }

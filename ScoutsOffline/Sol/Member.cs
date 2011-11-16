@@ -39,6 +39,8 @@ namespace ScoutsOffline.Sol
         public string Organisatie { get; set; }
         public string Organisatieplaats { get; set; }
 
+        public bool Selected { get; set; }
+
         private IEnumerable<PropertyInfo> GetSearchProperties()
         {
             return this.GetType().GetProperties().Where(p => p.Name.StartsWith("Lid"));
