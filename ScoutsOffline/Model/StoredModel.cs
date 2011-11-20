@@ -5,6 +5,9 @@ using System.Text;
 
 namespace ScoutsOffline.Model
 {
+    /// <summary>
+    /// Gebruiker specifiek model
+    /// </summary>
     public class StoredModel
     {
         public StoredModel()
@@ -13,5 +16,7 @@ namespace ScoutsOffline.Model
         }
 
         public MemberList MemberList { get; set; }
+        public RoleList RoleList { get; set; }
+        public string UserId { get; set; }
     }
 }

@@ -4,11 +4,14 @@ using System.Linq;
 using System.Text;
 using ScoutsOffline.Sol;
 using System.Collections;
+using System.Runtime.Serialization;
 
 namespace ScoutsOffline.Model
 {
-    public class MemberList
+    [DataContract]
+    public class MemberList : IListContainer<Member>, IEnumerable<Member>
     {
+        [DataMember]
         public List<Member> Members { get; set; }
 
         public MemberList()
@@ -27,6 +30,29 @@ namespace ScoutsOffline.Model
         internal void ToggleSelect(Member member)
         {
             member.Selected = !member.Selected;
+        }
+
+        public List<Member> ToList()
+        {
+            return Members;
+        }
+
+        public IEnumerator<Member> GetEnumerator()
+        {
+            return Members.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return Members.GetEnumerator();
+        }
+
+        public List<Member> SelectedMembers
+        {
+            get
+            {
+                return Members.Where(m => m.Selected).ToList();
+            }
         }
     }
 }

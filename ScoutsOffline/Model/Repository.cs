@@ -10,14 +10,13 @@ using System.Reflection;
 
 namespace ScoutsOffline.Model
 {
-    public class Repository
+    public class Repository<T>
     {
-        private string BaseDirectory;
         private DataContractSerializer serializer;
         private string file;
 
-        private StoredModel _model;
-        public StoredModel Model
+        private T _model;
+        public T Model
         {
             get
             {
@@ -29,22 +28,21 @@ namespace ScoutsOffline.Model
             }
         }
 
-        public Repository(string username)
+        public Repository(string file)
         {
-            this.BaseDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            this.serializer = new DataContractSerializer(typeof(StoredModel));
-            this.file = Path.Combine(BaseDirectory, username + ".xml");
+            this.serializer = new DataContractSerializer(typeof(T));
+            this.file = file;
         }
 
-        public StoredModel Get()
+        public T Get()
         {
             if (!File.Exists(file))
             {
-                return new StoredModel();
+                return default(T);
             }
             using (var stream = File.OpenRead(file))
             {
-                return (StoredModel)serializer.ReadObject(stream);
+                return (T)serializer.ReadObject(stream);
             }
         }
 
@@ -53,7 +51,7 @@ namespace ScoutsOffline.Model
             Store(Model);
         }
 
-        public void Store(StoredModel model)
+        public void Store(T model)
         {
             if (File.Exists(file))
             {
@@ -67,7 +65,7 @@ namespace ScoutsOffline.Model
             }
         }
 
-        private void StoreToFile(StoredModel model, string filename)
+        private void StoreToFile(T model, string filename)
         {
             XmlWriterSettings settings = new XmlWriterSettings();
             settings.Indent = true;

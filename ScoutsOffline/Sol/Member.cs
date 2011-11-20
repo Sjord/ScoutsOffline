@@ -118,5 +118,10 @@ namespace ScoutsOffline.Sol
                 && this.Organisatienummer == member.Organisatienummer
                 && this.Functiestartdatum == member.Functiestartdatum;
         }
+
+        public override string ToString()
+        {
+            return string.Format("{0}, {1} {2}", Lidachternaam, Lidvoornaam, Lidtussenvoegsel).Trim();
+        }
     }
 }

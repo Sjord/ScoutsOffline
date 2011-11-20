@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KwalificatieList xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/ScoutsOffline.Model">
+	<Kwalificaties>
+<Kwalificatie><Id>1</Id><Nummer>10000</Nummer><Omschrijving>regio introductie</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>10</Id><Nummer>20200</Nummer><Omschrijving>kamptraining 7-11 jr</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>11</Id><Nummer>20400</Nummer><Omschrijving>kamptraining 10-15 jr</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>12</Id><Nummer>20600</Nummer><Omschrijving>kamptr water 10-15 jr</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>121</Id><Nummer>51450</Nummer><Omschrijving>Klasse insigne 1e verkenner OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>122</Id><Nummer>51451</Nummer><Omschrijving>Klasse insigne 1e zeeverken OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>123</Id><Nummer>51452</Nummer><Omschrijving>Klasse insigne 2e verkenner OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>124</Id><Nummer>51453</Nummer><Omschrijving>Klasse insigne 2e zeeverken OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>125</Id><Nummer>51454</Nummer><Omschrijving>Klasse insigne 3e verkenner OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>126</Id><Nummer>51455</Nummer><Omschrijving>Klasse insigne 3e zeeverken OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>127</Id><Nummer>55650</Nummer><Omschrijving>Wereldnatuurinsigne W-E-K</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>128</Id><Nummer>55651</Nummer><Omschrijving>Wereldnatuurinsigne Scouts</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>129</Id><Nummer>55652</Nummer><Omschrijving>Wereldnatuurinsigne Explore</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>13</Id><Nummer>20700</Nummer><Omschrijving>kamptraining 14-17 jr</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>130</Id><Nummer>60000</Nummer><Omschrijving>Bootleiding R.1.</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>131</Id><Nummer>60002</Nummer><Omschrijving>Bootleiding Z.1.</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>132</Id><Nummer>60006</Nummer><Omschrijving>Bootleiding M.1.</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>133</Id><Nummer>60007</Nummer><Omschrijving>Bootleiding M.2.</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>136</Id><Nummer>60012</Nummer><Omschrijving>Bootleiding navigatie</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>137</Id><Nummer>62011</Nummer><Omschrijving>Insigne DWEK andere wereld (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>138</Id><Nummer>62014</Nummer><Omschrijving>Insigne DWEK beweging (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>139</Id><Nummer>62017</Nummer><Omschrijving>Insigne DWEK boswachter (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>14</Id><Nummer>20800</Nummer><Omschrijving>kamptraining 16+</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>140</Id><Nummer>62020</Nummer><Omschrijving>Insigne DWEK communicatie (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>141</Id><Nummer>62023</Nummer><Omschrijving>Insigne DWEK gastheer/-vrouw (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>142</Id><Nummer>62026</Nummer><Omschrijving>Insigne DWEK groene vingers (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>143</Id><Nummer>62029</Nummer><Omschrijving>Insigne DWEK hoogvlieger (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>144</Id><Nummer>62032</Nummer><Omschrijving>Insigne DWEK huisvriend (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>145</Id><Nummer>62035</Nummer><Omschrijving>Insigne DWEK jaargetijden (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>146</Id><Nummer>62038</Nummer><Omschrijving>insigne DWEK jungle (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>147</Id><Nummer>62041</Nummer><Omschrijving>Insigne DWEK kokkerellen (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>148</Id><Nummer>62044</Nummer><Omschrijving>Insigne DWEK kunstenaar (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>149</Id><Nummer>62047</Nummer><Omschrijving>Insigne DWEK muzikant (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>15</Id><Nummer>20900</Nummer><Omschrijving>roei insigne OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>150</Id><Nummer>62050</Nummer><Omschrijving>Insigne DWEK primitief eten (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>151</Id><Nummer>62053</Nummer><Omschrijving>Insigne DWEK reiziger (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>152</Id><Nummer>62056</Nummer><Omschrijving>Insigne DWEK Scouting (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>153</Id><Nummer>62059</Nummer><Omschrijving>Insigne DWEK theater (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>154</Id><Nummer>62062</Nummer><Omschrijving>Insigne Estas stap op (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>155</Id><Nummer>62065</Nummer><Omschrijving>Insigne DWEK strip (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>156</Id><Nummer>62068</Nummer><Omschrijving>Insigne DWEK water (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>157</Id><Nummer>62071</Nummer><Omschrijving>Insigne DWEK waterrat (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>158</Id><Nummer>62074</Nummer><Omschrijving>Insigne DWEK winkelen (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>159</Id><Nummer>62077</Nummer><Omschrijving>Insigne DWEK wonen (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>16</Id><Nummer>20901</Nummer><Omschrijving>zeil insigne rood OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>160</Id><Nummer>62078</Nummer><Omschrijving>Insigne DWEK kanoen (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>161</Id><Nummer>62079</Nummer><Omschrijving>Insigne DWEK Roeien (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>162</Id><Nummer>62080</Nummer><Omschrijving>Insigne DWEK Zeilen (OUD)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>163</Id><Nummer>63000</Nummer><Omschrijving>OUD Insigne k/w huis/boom/beest OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>164</Id><Nummer>63001</Nummer><Omschrijving>OUD Insigne k/w natuurvriend OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>165</Id><Nummer>63002</Nummer><Omschrijving>OUD Insigne k/w weerman/vrouw OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>166</Id><Nummer>63100</Nummer><Omschrijving>OUD Insigne k/w gastheer/vrouw OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>167</Id><Nummer>63101</Nummer><Omschrijving>OUD Insigne k/w kokkerellen OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>168</Id><Nummer>63102</Nummer><Omschrijving>OUD Insigne k/w sta eens even stil OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>169</Id><Nummer>63103</Nummer><Omschrijving>OUD Insigne k/w tot je dienst OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>17</Id><Nummer>20902</Nummer><Omschrijving>zeil insigne groen OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>170</Id><Nummer>63200</Nummer><Omschrijving>OUD Insigne k/w speurneus OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>171</Id><Nummer>63201</Nummer><Omschrijving>OUD Insigne k/w toerist OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>172</Id><Nummer>63202</Nummer><Omschrijving>OUD Insigne k/w verzamelaar OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>173</Id><Nummer>63300</Nummer><Omschrijving>OUD Insigne k/w boekenwurm OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>174</Id><Nummer>63301</Nummer><Omschrijving>OUD Insigne k/w fotograaf OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>175</Id><Nummer>63302</Nummer><Omschrijving>OUD Insigne k/w kunstenaar OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>176</Id><Nummer>63303</Nummer><Omschrijving>OUD Insigne k/w muzikant OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>177</Id><Nummer>63304</Nummer><Omschrijving>OUD Insigne k/w theater OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>178</Id><Nummer>63400</Nummer><Omschrijving>OUD Insigne k/w acrobaat OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>179</Id><Nummer>63401</Nummer><Omschrijving>OUD Insigne k/w sport OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>18</Id><Nummer>20905</Nummer><Omschrijving>Buitenb.motorvaren</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>180</Id><Nummer>63403</Nummer><Omschrijving>OUD Insigne k/w waterrat OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>181</Id><Nummer>63500</Nummer><Omschrijving>OUD Insigne k/w bambile-wolf OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>182</Id><Nummer>64001</Nummer><Omschrijving>Afrondingteken Scouts OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>183</Id><Nummer>64011</Nummer><Omschrijving>Insigne Scouts atletiek OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>184</Id><Nummer>64014</Nummer><Omschrijving>Insigne Scouts banketbakker OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>185</Id><Nummer>64015</Nummer><Omschrijving>Insigne Scouts BB-motorvaren OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>186</Id><Nummer>64017</Nummer><Omschrijving>Insigne Scouts brandpreventie OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>187</Id><Nummer>64020</Nummer><Omschrijving>Insigne Scouts communicatie OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>188</Id><Nummer>64023</Nummer><Omschrijving>Insigne Scouts computer OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>189</Id><Nummer>64026</Nummer><Omschrijving>Insigne Scouts dans OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>190</Id><Nummer>64029</Nummer><Omschrijving>Insigne Scouts dierkunde OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>191</Id><Nummer>64032</Nummer><Omschrijving>Insigne Scouts E.H.B.O. OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>192</Id><Nummer>64035</Nummer><Omschrijving>Insigne Scouts energie OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>193</Id><Nummer>64038</Nummer><Omschrijving>Insigne Scouts fietsen OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>194</Id><Nummer>64041</Nummer><Omschrijving>Insigne Scouts fotografie OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>195</Id><Nummer>64044</Nummer><Omschrijving>Insigne Scouts gr.techniek OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>196</Id><Nummer>64047</Nummer><Omschrijving>Insigne Scouts handvaardigheid OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>197</Id><Nummer>64050</Nummer><Omschrijving>Insigne Scouts houtvesten OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>198</Id><Nummer>64053</Nummer><Omschrijving>Insigne Scouts internationaal OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>199</Id><Nummer>64056</Nummer><Omschrijving>Insigne Scouts journalist OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2</Id><Nummer>10100</Nummer><Omschrijving>basisperiode 5-7 jr</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>200</Id><Nummer>64059</Nummer><Omschrijving>Insigne Scouts kamperen OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>201</Id><Nummer>64062</Nummer><Omschrijving>Insigne Scouts kampvuurleider OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>202</Id><Nummer>64065</Nummer><Omschrijving>Insigne Scouts kanoën OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>203</Id><Nummer>64068</Nummer><Omschrijving>Insigne Scouts ken je omgeving OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>204</Id><Nummer>64071</Nummer><Omschrijving>Insigne Scouts koken OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>205</Id><Nummer>64074</Nummer><Omschrijving>Insigne Scouts loods OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>206</Id><Nummer>64077</Nummer><Omschrijving>Insigne Scouts millieu OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>207</Id><Nummer>64080</Nummer><Omschrijving>Insigne Scouts modelvliegen OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2072</Id><Nummer>30306</Nummer><Omschrijving>Lid in de Orde van Oranje-Nassau</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2075</Id><Nummer>29000</Nummer><Omschrijving>Groepsbegeleiderstraining</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2076</Id><Nummer>29100</Nummer><Omschrijving>Teamleiderstraining</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2077</Id><Nummer>30400</Nummer><Omschrijving>VOG (I-P) Informatie &amp; Personen (1 &amp; 8)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2078</Id><Nummer>30401</Nummer><Omschrijving>VOG (I-G-P) Informatie, Geld &amp; Personen (1, 2 &amp; 8)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2079</Id><Nummer>30402</Nummer><Omschrijving>Aanvraagprocedure voor Verklaring omtrent Gedrag (VOG) gestart</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>208</Id><Nummer>64083</Nummer><Omschrijving>Insigne Scouts motortechniek OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2080</Id><Nummer>30450</Nummer><Omschrijving>Instructie Verantwoord Alcoholgebruik (IVA)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2081</Id><Nummer>30451</Nummer><Omschrijving>Sociale Hygiene</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2085</Id><Nummer>10080</Nummer><Omschrijving>programmatraining gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2086</Id><Nummer>10082</Nummer><Omschrijving>programmatraining 6-7 jr gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2087</Id><Nummer>10084</Nummer><Omschrijving>programmatraining 7-11 jr gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2088</Id><Nummer>10086</Nummer><Omschrijving>programmatraining 10-14 jr gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2089</Id><Nummer>10088</Nummer><Omschrijving>programmatraining 14-17 jr gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>209</Id><Nummer>64086</Nummer><Omschrijving>Insigne Scouts muziek OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2090</Id><Nummer>10090</Nummer><Omschrijving>programmatraining 16+ gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2091</Id><Nummer>10092</Nummer><Omschrijving>programmatraining waterwerk gevolg</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2092</Id><Nummer>10094</Nummer><Omschrijving>programmatraining SMH gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2093</Id><Nummer>27020</Nummer><Omschrijving>gilwell buitenland</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>210</Id><Nummer>64089</Nummer><Omschrijving>Insigne Scouts natuurbeheer OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>211</Id><Nummer>64092</Nummer><Omschrijving>Insigne Scouts ontw.samenw. OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>212</Id><Nummer>64095</Nummer><Omschrijving>Insigne Scouts organisatie OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2128</Id><Nummer>10001</Nummer><Omschrijving>regio introductie NDLG</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2129</Id><Nummer>10010</Nummer><Omschrijving>Praktijkopleider Calibris</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>213</Id><Nummer>64098</Nummer><Omschrijving>Insigne Scouts oriënteren OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2130</Id><Nummer>10020</Nummer><Omschrijving>Certificering Vertrouwenspersoon (VP)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2136</Id><Nummer>29009</Nummer><Omschrijving>Vervolgtraining algemeen: Omgaan met probleemgedrag</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2137</Id><Nummer>29902</Nummer><Omschrijving>Training: Handelen bij agressief gedrag</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>214</Id><Nummer>64101</Nummer><Omschrijving>Insigne Scouts paardrijden OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2149</Id><Nummer>29901</Nummer><Omschrijving>Training maatschappelijke stagebegeleider</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>215</Id><Nummer>64104</Nummer><Omschrijving>Insigne Scouts pionieren OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2150</Id><Nummer>30301</Nummer><Omschrijving>Ridder Grootkruis in de Orde van Oranje-Nassau</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2151</Id><Nummer>30302</Nummer><Omschrijving>Grootofficier in de Orde van Oranje-Nassau</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2152</Id><Nummer>30303</Nummer><Omschrijving>Commandeur in de Orde van Oranje-Nassau</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2153</Id><Nummer>30304</Nummer><Omschrijving>Officier in Orde van Oranje-Nassau</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2154</Id><Nummer>30305</Nummer><Omschrijving>Ridder in de Orde van Oranje-Nassau</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2156</Id><Nummer>29001</Nummer><Omschrijving>Vervolgtraining algemeen: Het gezicht van je groep</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2157</Id><Nummer>29002</Nummer><Omschrijving>Vervolgtraining algemeen: Spelen met een bedoeling</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2158</Id><Nummer>29003</Nummer><Omschrijving>Vervolgtraining algemeen: Inspelen op Scouts met een handicap</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2159</Id><Nummer>29004</Nummer><Omschrijving>Vervolgtraining algemeen: Kennismaken met kaart en kompas</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>216</Id><Nummer>64107</Nummer><Omschrijving>Insigne Scouts plantkennis OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2160</Id><Nummer>29005</Nummer><Omschrijving>Vervolgtraining algemeen: Milieuvriendelijk op kamp en bivak</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2161</Id><Nummer>29006</Nummer><Omschrijving>Vervolgtraining algemeen: Pesten</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2162</Id><Nummer>29007</Nummer><Omschrijving>Vervolgtraining algemeen: Wat zijn de oorzaken en wat kun je eraan doen?</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2163</Id><Nummer>29008</Nummer><Omschrijving>Vervolgtraining algemeen: Kampvuren</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2164</Id><Nummer>29010</Nummer><Omschrijving>Vervolgtraining algemeen: Eerste hulp bij ouders</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2165</Id><Nummer>29011</Nummer><Omschrijving>Vervolgraining algemeen: Teamleiderstraining spin in 't web</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2166</Id><Nummer>29012</Nummer><Omschrijving>Vervolgtraining algemeen: Omgaan met ADHD/PDD-NOS</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2167</Id><Nummer>29101</Nummer><Omschrijving>Vervolgtraining bevers: Spelen in de wereld van Lange Doener</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2168</Id><Nummer>29102</Nummer><Omschrijving>Vervolgtraining bevers: Programmeren met Ssst</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2169</Id><Nummer>29103</Nummer><Omschrijving>Vervolgtraining bevers: Feest bij de bevers</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>217</Id><Nummer>64110</Nummer><Omschrijving>Insigne Scouts radiotechniek OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2170</Id><Nummer>29201</Nummer><Omschrijving>Vervolgtraining DWEK: Thematisch programmeren voor 7 - 11 jarigen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2171</Id><Nummer>29202</Nummer><Omschrijving>Vervolgtraining DWEK: Op avontuur met je beer</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2172</Id><Nummer>29301</Nummer><Omschrijving>Vervolgtraining scouts: Actief aan de slag met scouts</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2173</Id><Nummer>29302</Nummer><Omschrijving>Vervolgtraining scouts: Natuur en milieu</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2174</Id><Nummer>29303</Nummer><Omschrijving>Vervolgtraining scouts: Gemengd spelen met Scouts</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2175</Id><Nummer>29304</Nummer><Omschrijving>Vervolgtraining scouts: Een jaar met scouts</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2176</Id><Nummer>29305</Nummer><Omschrijving>Vervolgtraining scouts: Ruig, toch verantwoord</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2177</Id><Nummer>29401</Nummer><Omschrijving>Vervolgtraining explorers: Aan de slag met explorers</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2178</Id><Nummer>29402</Nummer><Omschrijving>Vervolgtraining explorers: Prettig primitief</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2179</Id><Nummer>29403</Nummer><Omschrijving>Vervolgtraining explorers: Het internationale avontuur</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>218</Id><Nummer>64113</Nummer><Omschrijving>Insigne Scouts roeien OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2180</Id><Nummer>29501</Nummer><Omschrijving>Vervolgtraining waterwerk: Veiligheid en milieu bij botenonderhoud</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2181</Id><Nummer>29502</Nummer><Omschrijving>Vervolgtraining waterwerk: Speel eens met nautische technieken</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2182</Id><Nummer>29801</Nummer><Omschrijving>bestuursmodule: Begeleiden</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2183</Id><Nummer>29802</Nummer><Omschrijving>bestuursmodule: Beheer en onderhoud</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2184</Id><Nummer>29803</Nummer><Omschrijving>bestuursmodule: Besturen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2185</Id><Nummer>29804</Nummer><Omschrijving>bestuursmodule: Bouw en verbouw</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2186</Id><Nummer>29805</Nummer><Omschrijving>bestuursmodule: Communicatie en gesprekstechnieken</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2187</Id><Nummer>29806</Nummer><Omschrijving>bestuursmodule: Conflicthantering</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2188</Id><Nummer>29807</Nummer><Omschrijving>bestuursmodule: Effectief vergaderen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2189</Id><Nummer>29808</Nummer><Omschrijving>bestuursmodule: Financieel beleid</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>219</Id><Nummer>64116</Nummer><Omschrijving>Insigne Scouts schaal model OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2190</Id><Nummer>29809</Nummer><Omschrijving>bestuursmodule: Financiële administratie</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2191</Id><Nummer>29810</Nummer><Omschrijving>bestuursmodule: Fondsenwerving</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2192</Id><Nummer>29811</Nummer><Omschrijving>bestuursmodule: Intimiteiten</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2193</Id><Nummer>29812</Nummer><Omschrijving>bestuursmodule: Introductie</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2194</Id><Nummer>29813</Nummer><Omschrijving>bestuursmodule: Ledenen kaderwerving</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2195</Id><Nummer>29814</Nummer><Omschrijving>bestuursmodule: Marketing</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2196</Id><Nummer>29815</Nummer><Omschrijving>bestuursmodule: Materiaalbeheer</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2197</Id><Nummer>29816</Nummer><Omschrijving>bestuursmodule: Medewerkersbeleid</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2198</Id><Nummer>29817</Nummer><Omschrijving>bestuursmodule: Mentorbegeleiding</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2199</Id><Nummer>29818</Nummer><Omschrijving>bestuursmodule: Organiseren van activiteiten</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>220</Id><Nummer>64119</Nummer><Omschrijving>Insigne Scouts schaatsen OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2200</Id><Nummer>29819</Nummer><Omschrijving>bestuursmodule: PR en Voorlichting</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2201</Id><Nummer>29820</Nummer><Omschrijving>bestuursmodule: Secretariaat</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2202</Id><Nummer>29821</Nummer><Omschrijving>bestuursmodule: Sponsoring</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2203</Id><Nummer>29822</Nummer><Omschrijving>bestuursmodule: Werken beleidsplan</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2205</Id><Nummer>54610</Nummer><Omschrijving>lustrumteken 5 jaar</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2206</Id><Nummer>54611</Nummer><Omschrijving>lustrumteken 10 jaar</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2207</Id><Nummer>54612</Nummer><Omschrijving>lustrumteken 15 jaar</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2208</Id><Nummer>54613</Nummer><Omschrijving>lustrumteken 20 jaar</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2209</Id><Nummer>54614</Nummer><Omschrijving>lustrumteken 25 jaar</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>221</Id><Nummer>64122</Nummer><Omschrijving>Insigne Scouts schiemannen OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2210</Id><Nummer>54615</Nummer><Omschrijving>lustrumteken 30 jaar</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2211</Id><Nummer>54616</Nummer><Omschrijving>lustrumteken 40 jaar</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2212</Id><Nummer>54617</Nummer><Omschrijving>lustrumteken 50 jaar</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>222</Id><Nummer>64125</Nummer><Omschrijving>Insigne Scouts snorkelen OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>223</Id><Nummer>64128</Nummer><Omschrijving>Insigne Scouts spelleiding OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2235</Id><Nummer>280053</Nummer><Omschrijving>EHV: Eerste Hulp aan Kinderen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2237</Id><Nummer>280019</Nummer><Omschrijving>EHV: Wandelletsels</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2238</Id><Nummer>280020</Nummer><Omschrijving>EHV: Sportletsels</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>224</Id><Nummer>64131</Nummer><Omschrijving>Insigne Scouts sport OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>225</Id><Nummer>64134</Nummer><Omschrijving>Insigne Scouts sterrenkunde OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2256</Id><Nummer>27030</Nummer><Omschrijving>training opleider-trainer gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2257</Id><Nummer>27031</Nummer><Omschrijving>training opleider-begeleider gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2258</Id><Nummer>27032</Nummer><Omschrijving>training opleider-assessor gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2259</Id><Nummer>27033</Nummer><Omschrijving>training opleider-beoordelaar gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>226</Id><Nummer>64137</Nummer><Omschrijving>Insigne Scouts surfen OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2267</Id><Nummer>22063</Nummer><Omschrijving>CWO ZI-2</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2268</Id><Nummer>22064</Nummer><Omschrijving>CWO ZI-3</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2269</Id><Nummer>22065</Nummer><Omschrijving>CWO ZI-4</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>227</Id><Nummer>64140</Nummer><Omschrijving>Insigne Scouts text.technieken OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2271</Id><Nummer>22066</Nummer><Omschrijving>CWO ZI-4ex</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>228</Id><Nummer>64143</Nummer><Omschrijving>Insigne Scouts tolk OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2281</Id><Nummer>22008</Nummer><Omschrijving>CWO Theorie Rb III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2282</Id><Nummer>22016</Nummer><Omschrijving>CWO Theorie Kb III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2283</Id><Nummer>22045</Nummer><Omschrijving>CWO Theorie Bb III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2285</Id><Nummer>22115</Nummer><Omschrijving>CWO Theorie ZV-Motorboot II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2288</Id><Nummer>27003</Nummer><Omschrijving>training praktijkcoach gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2289</Id><Nummer>27004</Nummer><Omschrijving>stage praktijkcoach gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>229</Id><Nummer>64146</Nummer><Omschrijving>Insigne Scouts toneel OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2290</Id><Nummer>27005</Nummer><Omschrijving>gekwalificeerd praktijkcoach</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2293</Id><Nummer>21120</Nummer><Omschrijving>Groot Pleziervaartbewijs 1 (tot 40 meter)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2294</Id><Nummer>21130</Nummer><Omschrijving>Groot Pleziervaartbewijs 2 (tot 40 meter)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2295</Id><Nummer>21140</Nummer><Omschrijving>Groot Pleziervaartbewijs 1 (40 meter +)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2296</Id><Nummer>21150</Nummer><Omschrijving>Groot Pleziervaartbewijs 2 (40 meter +)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>230</Id><Nummer>64149</Nummer><Omschrijving>Insigne Scouts trapper OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2300</Id><Nummer>28100</Nummer><Omschrijving>Certificaat Europees Eerste Hulp</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2301</Id><Nummer>28110</Nummer><Omschrijving>Certificaat Reanimatie (BLS &amp; AED)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2302</Id><Nummer>28111</Nummer><Omschrijving>Certificaat Module Basic Life Support (BLS)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2303</Id><Nummer>28112</Nummer><Omschrijving>Certificaat Module AED</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2304</Id><Nummer>28120</Nummer><Omschrijving>Certificaat Basis EHV</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2305</Id><Nummer>28130</Nummer><Omschrijving>Certificaat Eerste Hulp aan Kinderen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2306</Id><Nummer>28140</Nummer><Omschrijving>Certificaat Eerste Hulp bij sportongevallen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2308</Id><Nummer>22200</Nummer><Omschrijving>CWO Theoretische Kustnavigatie</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>231</Id><Nummer>64152</Nummer><Omschrijving>Insigne Scouts valschermzweven OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2319</Id><Nummer>27050</Nummer><Omschrijving>Training praktijkbegeleider gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>232</Id><Nummer>64155</Nummer><Omschrijving>Insigne Scouts video film OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2320</Id><Nummer>27051</Nummer><Omschrijving>Stage praktijkbegeleider afgerond</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2321</Id><Nummer>27052</Nummer><Omschrijving>Gekwalificeerd praktijkbegeleider</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2328</Id><Nummer>27300</Nummer><Omschrijving>Leidinggevende bevers, welpen, scouts</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2329</Id><Nummer>27310</Nummer><Omschrijving>Teamleid(st)er bevers, welpen, scouts</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>233</Id><Nummer>64158</Nummer><Omschrijving>Insigne Scouts vliegeren OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2330</Id><Nummer>27320</Nummer><Omschrijving>Begeleider en / of adviseur explorers / roverscouts</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2331</Id><Nummer>27330</Nummer><Omschrijving>Teamleider explorers / roverscouts</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2332</Id><Nummer>27340</Nummer><Omschrijving>Praktijkbegeleider</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>234</Id><Nummer>64161</Nummer><Omschrijving>Insigne Scouts vliegtuigherken OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2340</Id><Nummer>27420</Nummer><Omschrijving>Spelvisie en spelaanbod</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2341</Id><Nummer>27430</Nummer><Omschrijving>Scouting in de samenleving</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2342</Id><Nummer>27440</Nummer><Omschrijving>Scouting Academy</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2343</Id><Nummer>27450</Nummer><Omschrijving>Leeftijdseigene</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2344</Id><Nummer>27460</Nummer><Omschrijving>Activiteitenwensen en spelideeën</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2345</Id><Nummer>27470</Nummer><Omschrijving>Programmeren</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2346</Id><Nummer>27480</Nummer><Omschrijving>Motivatietechnieken en groepsproces</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2347</Id><Nummer>27490</Nummer><Omschrijving>Veiligheid</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2348</Id><Nummer>27500</Nummer><Omschrijving>Presenteren en uitleggen van activiteiten</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2349</Id><Nummer>27510</Nummer><Omschrijving>Gewenst gedrag</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>235</Id><Nummer>64164</Nummer><Omschrijving>Insigne Scouts wandelen OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2350</Id><Nummer>27520</Nummer><Omschrijving>Evalueren van activiteiten</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2351</Id><Nummer>27530</Nummer><Omschrijving>Gespreks- en overlegvaardigheden</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2352</Id><Nummer>27540</Nummer><Omschrijving>Teamleiders 1</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2353</Id><Nummer>27550</Nummer><Omschrijving>Teamleiders 2</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2356</Id><Nummer>27570</Nummer><Omschrijving>Overstapmodule Scouting Academy</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2357</Id><Nummer>27560</Nummer><Omschrijving>Overstapmodule spel en spelaanbod</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>236</Id><Nummer>64167</Nummer><Omschrijving>Insigne Scouts weerkennis OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>237</Id><Nummer>64170</Nummer><Omschrijving>Insigne Scouts werfbaas OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>238</Id><Nummer>64173</Nummer><Omschrijving>Insigne Scouts woudlopen OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>239</Id><Nummer>64175</Nummer><Omschrijving>Insigne Scouts zeilen(groen) OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2392</Id><Nummer>61110</Nummer><Omschrijving>Insigne welpen Samen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2393</Id><Nummer>61111</Nummer><Omschrijving>Insigne welpen Sport</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2394</Id><Nummer>61112</Nummer><Omschrijving>Insigne welpen Spoorzoeker</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2395</Id><Nummer>61113</Nummer><Omschrijving>Insigne welpen Varen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2396</Id><Nummer>61114</Nummer><Omschrijving>Insigne welpen Weer</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2397</Id><Nummer>61115</Nummer><Omschrijving>Insigne welpen Thuis</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2398</Id><Nummer>61116</Nummer><Omschrijving>Insigne welpen Spelexpert</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2399</Id><Nummer>61117</Nummer><Omschrijving>Insigne welpen Show</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>240</Id><Nummer>64176</Nummer><Omschrijving>Insigne Scouts zeilen(rood) OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2400</Id><Nummer>61118</Nummer><Omschrijving>Insigne welpen Kunstenaar</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2401</Id><Nummer>61119</Nummer><Omschrijving>Insigne welpen Wijde Wereld</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2402</Id><Nummer>61120</Nummer><Omschrijving>Insigne welpen Knopen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2403</Id><Nummer>61121</Nummer><Omschrijving>Insigne welpen E.H.B.O.</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2404</Id><Nummer>61122</Nummer><Omschrijving>Insigne welpen Koken</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2405</Id><Nummer>61123</Nummer><Omschrijving>Insigne welpen Ik</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2406</Id><Nummer>61124</Nummer><Omschrijving>Insigne welpen Geschiedenis</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2407</Id><Nummer>61125</Nummer><Omschrijving>Insigne welpen Journalist</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2408</Id><Nummer>61126</Nummer><Omschrijving>Insigne welpen Cultuur</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2409</Id><Nummer>61127</Nummer><Omschrijving>Insigne welpen Natuur</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>241</Id><Nummer>64179</Nummer><Omschrijving>Insigne Scouts zwemmen OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2410</Id><Nummer>61128</Nummer><Omschrijving>Insigne welpen Pionieren</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2411</Id><Nummer>61129</Nummer><Omschrijving>Insigne welpen Zakmes</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2412</Id><Nummer>61130</Nummer><Omschrijving>Insigne welpen Leiding voor een keer</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2413</Id><Nummer>61131</Nummer><Omschrijving>Insigne welpen Nachtje kamperen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2414</Id><Nummer>61132</Nummer><Omschrijving>Insigne welpen Kampvuur</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2418</Id><Nummer>30403</Nummer><Omschrijving>OUD VOG I-G-A-P</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2419</Id><Nummer>30404</Nummer><Omschrijving>VOG (I-A-P) Informatie, Aansturing, Personen (1, 7 &amp; 8)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>242</Id><Nummer>64182</Nummer><Omschrijving>Insigne Scouts zwemmend redden OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2420</Id><Nummer>30405</Nummer><Omschrijving>VOG (I-G-A-P) Informatie, Geld, Aansturing en Personen (1, 2, 7 &amp; 8)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2422</Id><Nummer>61210</Nummer><Omschrijving>Insigne scouts Buitenleven basisfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2423</Id><Nummer>61211</Nummer><Omschrijving>Insigne scouts Buitenleven verdiepingsfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2424</Id><Nummer>61213</Nummer><Omschrijving>Insigne scouts Expressie basisfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2425</Id><Nummer>61214</Nummer><Omschrijving>Insigne scouts Expressie verdiepingsfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2426</Id><Nummer>61216</Nummer><Omschrijving>Insigne scouts Identiteit basisfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2427</Id><Nummer>61216</Nummer><Omschrijving>Insigne scouts Identiteit basisfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2428</Id><Nummer>61217</Nummer><Omschrijving>Insigne scouts Identiteit verdiepingsfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2429</Id><Nummer>61219</Nummer><Omschrijving>Insigne scouts Internationaal basisfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>243</Id><Nummer>64185</Nummer><Omschrijving>Insigne Scouts zwerven OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2431</Id><Nummer>61222</Nummer><Omschrijving>Insigne scouts Samenleving basisfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2432</Id><Nummer>61223</Nummer><Omschrijving>Insigne scouts Samenleving verdiepingsfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2433</Id><Nummer>61225</Nummer><Omschrijving>Insigne scouts Sport &amp; Spel basisfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2434</Id><Nummer>61226</Nummer><Omschrijving>Insigne scouts Sport &amp; Spel verdiepingsfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2435</Id><Nummer>61228</Nummer><Omschrijving>Insigne scouts UST Houtbewerking en stoken basisfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2436</Id><Nummer>61229</Nummer><Omschrijving>Insigne scouts UST Houtbewerking en stoken verdiepingsfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2437</Id><Nummer>61231</Nummer><Omschrijving>Insigne scouts UST Kampeertechnieken en pionieren basisfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2438</Id><Nummer>61232</Nummer><Omschrijving>Insigne scouts UST Kampeertechnieken en pionieren verdiepingsfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2439</Id><Nummer>61234</Nummer><Omschrijving>Insigne scouts UST Tochttechnieken basisfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>244</Id><Nummer>65000</Nummer><Omschrijving>V.ins.p/g/v.brandpreventie</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2440</Id><Nummer>61235</Nummer><Omschrijving>Insigne scouts UST Tochttechnieken verdiepingsfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2441</Id><Nummer>61237</Nummer><Omschrijving>Insigne scouts Veilig &amp; Gezond basisfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2442</Id><Nummer>61238</Nummer><Omschrijving>Insigne scouts Veilig &amp; Gezond verdiepingsfase</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2443</Id><Nummer>61240</Nummer><Omschrijving>Insigne scouts Zeilen Kielboot I</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2444</Id><Nummer>61241</Nummer><Omschrijving>Insigne scouts Zeilen Kielboot II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>2445</Id><Nummer>61242</Nummer><Omschrijving>Insigne scouts Roeien I/II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>245</Id><Nummer>65001</Nummer><Omschrijving>V.ins.p/g/v houtvester</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>246</Id><Nummer>65002</Nummer><Omschrijving>V.ins.p/g/v.kamperen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>247</Id><Nummer>65003</Nummer><Omschrijving>V.ins.p/g/v.milieubeheer</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>248</Id><Nummer>65004</Nummer><Omschrijving>V.ins.p/g/v.natuurverkennen OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>249</Id><Nummer>65005</Nummer><Omschrijving>V.ins.p/g/v.pionieren</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>250</Id><Nummer>65006</Nummer><Omschrijving>V.ins.p/g/v.plant/dier</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>251</Id><Nummer>65007</Nummer><Omschrijving>V.ins.p/g/v.sterrenkunde</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>252</Id><Nummer>65008</Nummer><Omschrijving>V.ins.p/g/v.het weer</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>253</Id><Nummer>65101</Nummer><Omschrijving>V.ins.p/g/v.gids</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>254</Id><Nummer>65102</Nummer><Omschrijving>V.ins.p/g/v.koken</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>255</Id><Nummer>65103</Nummer><Omschrijving>V.ins.p/g/v.levensbeschouwing</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>256</Id><Nummer>65104</Nummer><Omschrijving>V.ins.p/g/v voor ander</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>257</Id><Nummer>65200</Nummer><Omschrijving>V.ins.p/g/v.beroepsverkenning OUD</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>258</Id><Nummer>65201</Nummer><Omschrijving>V.ins.p/g/v.heemkunde</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>259</Id><Nummer>65202</Nummer><Omschrijving>V.ins.p/g/v.hobby</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>260</Id><Nummer>65203</Nummer><Omschrijving>V.ins.p/g/v.orienteren</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>261</Id><Nummer>65204</Nummer><Omschrijving>V.ins.p/g/v.scouting</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>262</Id><Nummer>65205</Nummer><Omschrijving>V.ins.p/g/v.toerist</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>263</Id><Nummer>65206</Nummer><Omschrijving>V.ins.p/g/v.verkeer</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>264</Id><Nummer>65207</Nummer><Omschrijving>V.ins.p/g/v.verk.je omgeving</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>265</Id><Nummer>65208</Nummer><Omschrijving>V.ins.p/g/v.werfbaas</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>266</Id><Nummer>65300</Nummer><Omschrijving>V.ins.p/g/v.fotograferen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>267</Id><Nummer>65301</Nummer><Omschrijving>V.ins.p/g/v.muziek</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>268</Id><Nummer>65302</Nummer><Omschrijving>V.ins.p/g/v.schiemannen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>269</Id><Nummer>65400</Nummer><Omschrijving>V.ins.p/g/v.atletiek</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>270</Id><Nummer>65401</Nummer><Omschrijving>V.ins.p/g/v.in het water</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>271</Id><Nummer>65402</Nummer><Omschrijving>V.ins.p/g/v.kanovaren</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>272</Id><Nummer>65403</Nummer><Omschrijving>V.ins.p/g/v.red. zwemmen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>273</Id><Nummer>65404</Nummer><Omschrijving>V.ins.p/g/v.roeien</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>274</Id><Nummer>65405</Nummer><Omschrijving>V.ins.p/g/v.streeksport</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>275</Id><Nummer>65406</Nummer><Omschrijving>V.ins.p/g/v.trapper</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>276</Id><Nummer>65407</Nummer><Omschrijving>V.ins.p/g/v.trimmen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>277</Id><Nummer>65408</Nummer><Omschrijving>V.ins.p/g/v.zeilen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>278</Id><Nummer>65409</Nummer><Omschrijving>V.ins.p/g/v.surfer</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>279</Id><Nummer>67208</Nummer><Omschrijving>Vaard.ins.zv werfbaas</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>28</Id><Nummer>21008</Nummer><Omschrijving>MBL M-I</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>280</Id><Nummer>67302</Nummer><Omschrijving>Vaard.ins.zv schieman</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>281</Id><Nummer>67401</Nummer><Omschrijving>Vaard.ins.zv.het water</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>282</Id><Nummer>67402</Nummer><Omschrijving>Vaard.ins.zv.kanovaren</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>283</Id><Nummer>67403</Nummer><Omschrijving>Vaard.ins.zv.reddend zwemmen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>284</Id><Nummer>67404</Nummer><Omschrijving>Vaard.ins.zv.roeien</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>285</Id><Nummer>67406</Nummer><Omschrijving>Vaard.ins.zv.surfer</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>286</Id><Nummer>67408</Nummer><Omschrijving>Vaard.ins.zv.zeilen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>287</Id><Nummer>67500</Nummer><Omschrijving>Vaard.ins.lv.modelvliegen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>288</Id><Nummer>67502</Nummer><Omschrijving>V.ins.lv.radio modelvliegen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>289</Id><Nummer>9999</Nummer><Omschrijving>Erkend door groepsraad</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>29</Id><Nummer>21009</Nummer><Omschrijving>MBL M-II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>3</Id><Nummer>10200</Nummer><Omschrijving>basisperiode 7-11 jr</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>34</Id><Nummer>21100</Nummer><Omschrijving>Klein Vaarbewijs I</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>35</Id><Nummer>21110</Nummer><Omschrijving>Klein Vaarbewijs II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>36</Id><Nummer>21200</Nummer><Omschrijving>Groot Vaarbewijs</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>37</Id><Nummer>21506</Nummer><Omschrijving>CWO Jz2-III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>38</Id><Nummer>21501</Nummer><Omschrijving>CWO Jz1-I</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>39</Id><Nummer>21502</Nummer><Omschrijving>CWO Jz2-I</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>4</Id><Nummer>10400</Nummer><Omschrijving>basisperiode 10-15 jr</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>40</Id><Nummer>21503</Nummer><Omschrijving>CWO Jz1-II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>41</Id><Nummer>21504</Nummer><Omschrijving>CWO Jz2-II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>42</Id><Nummer>21505</Nummer><Omschrijving>CWO Jz1-III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>43</Id><Nummer>22006</Nummer><Omschrijving>CWO Roeiboot(RBI/II)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>44</Id><Nummer>22007</Nummer><Omschrijving>CWO Roeiboot (RbIII)</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>45</Id><Nummer>22010</Nummer><Omschrijving>CWO Kb I</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>46</Id><Nummer>22011</Nummer><Omschrijving>CWO Kb II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>47</Id><Nummer>22012</Nummer><Omschrijving>CWO Kb III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>5</Id><Nummer>10600</Nummer><Omschrijving>bas.per.water 10-15jr</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>50</Id><Nummer>22030</Nummer><Omschrijving>CWO Mb I/II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>51</Id><Nummer>22033</Nummer><Omschrijving>CWO Mb III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>52</Id><Nummer>22041</Nummer><Omschrijving>CWO Bb III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>550</Id><Nummer>28000</Nummer><Omschrijving>EHV (voorheen EHBO)-diploma</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>59</Id><Nummer>22091</Nummer><Omschrijving>CWO Zeezeilen II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>6</Id><Nummer>10700</Nummer><Omschrijving>basisperiode 14-17 jr</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>61</Id><Nummer>22101</Nummer><Omschrijving>CWO Kajuitzeilen II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>62</Id><Nummer>22110</Nummer><Omschrijving>CWO ZV-motorboot I</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>63</Id><Nummer>22111</Nummer><Omschrijving>CWO ZV-motorboot II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>647</Id><Nummer>10900</Nummer><Omschrijving>basisperiode SMH</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>710</Id><Nummer>21014</Nummer><Omschrijving>MBL Zeezeilen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>711</Id><Nummer>21020</Nummer><Omschrijving>MBL R</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>712</Id><Nummer>21021</Nummer><Omschrijving>MBL Z1</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>714</Id><Nummer>21601</Nummer><Omschrijving>CWO-Jzcat-I</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>715</Id><Nummer>21602</Nummer><Omschrijving>CWO-Jzcat-II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>716</Id><Nummer>21603</Nummer><Omschrijving>CWO-Jzcat-III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>717</Id><Nummer>21701</Nummer><Omschrijving>CWO-Zb-I</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>718</Id><Nummer>21702</Nummer><Omschrijving>CWO-Zb-II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>719</Id><Nummer>21703</Nummer><Omschrijving>CWO-Zb-III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>721</Id><Nummer>25301</Nummer><Omschrijving>Examinat.MBL-R</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>722</Id><Nummer>25302</Nummer><Omschrijving>Examinat.MBL-Z1</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>723</Id><Nummer>25303</Nummer><Omschrijving>Examinat.MBL-Z2</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>725</Id><Nummer>22020</Nummer><Omschrijving>CWO Catamaran I</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>726</Id><Nummer>22021</Nummer><Omschrijving>CWO Catamaran II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>727</Id><Nummer>22022</Nummer><Omschrijving>CWO Catamaran III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>729</Id><Nummer>22040</Nummer><Omschrijving>CWO Bb I/II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>731</Id><Nummer>22090</Nummer><Omschrijving>CWO Kajuit/Zeezeilen I</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>732</Id><Nummer>22092</Nummer><Omschrijving>CWO Zeezeilen III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>734</Id><Nummer>22102</Nummer><Omschrijving>CWO Kajuitjachtzeilen III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>736</Id><Nummer>22120</Nummer><Omschrijving>CWO Windsurfen I</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>737</Id><Nummer>22121</Nummer><Omschrijving>CWO Windsurfen Alround/Fun II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>738</Id><Nummer>22122</Nummer><Omschrijving>CWO Windsurfen Alround III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>739</Id><Nummer>22123</Nummer><Omschrijving>CWO Windsurfen Fun III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>740</Id><Nummer>22124</Nummer><Omschrijving>CWO Windsurfen Branding II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>741</Id><Nummer>22125</Nummer><Omschrijving>CWO Windsurfen Branding III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>767</Id><Nummer>21300</Nummer><Omschrijving>Basiscertificaat marifonie</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>768</Id><Nummer>21301</Nummer><Omschrijving>Marcom B</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>769</Id><Nummer>21302</Nummer><Omschrijving>Marcom A</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>770</Id><Nummer>22031</Nummer><Omschrijving>CWO Mb I</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>771</Id><Nummer>22032</Nummer><Omschrijving>CWO Mb II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>775</Id><Nummer>280001</Nummer><Omschrijving>EHBO: Vijf belangrijke punten</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>776</Id><Nummer>280002</Nummer><Omschrijving>EHV: Stoornissen in het bewustzijn</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>777</Id><Nummer>280003</Nummer><Omschrijving>EHV: Stoornissen van de ademhaling</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>778</Id><Nummer>280004</Nummer><Omschrijving>EHV: Stilstand van de bloedsomloop</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>779</Id><Nummer>280005</Nummer><Omschrijving>EHV: Ernstige uitwendige bloedingen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>780</Id><Nummer>280006</Nummer><Omschrijving>EHV: Shock</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>781</Id><Nummer>280007</Nummer><Omschrijving>EHV: Uitwendige wonden</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>782</Id><Nummer>280008</Nummer><Omschrijving>EHV: Brandwonden</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>783</Id><Nummer>280009</Nummer><Omschrijving>EHV: Kneuzing en verstuiking</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>784</Id><Nummer>280010</Nummer><Omschrijving>EHV: Ontwrichting en botbreuken</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>785</Id><Nummer>280011</Nummer><Omschrijving>EHV: Oogletsels</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>786</Id><Nummer>280012</Nummer><Omschrijving>EHV: Vergiftiging</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>787</Id><Nummer>280013</Nummer><Omschrijving>EHV: Elektriciteitsongevallen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>788</Id><Nummer>280014</Nummer><Omschrijving>EHV: Letsels door koude</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>789</Id><Nummer>280015</Nummer><Omschrijving>EHV: Letsels door warmte</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>790</Id><Nummer>280016</Nummer><Omschrijving>EHV: Vervoer over korte afstand</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>791</Id><Nummer>280017</Nummer><Omschrijving>EHV: Verband- en hulpmiddelen</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>792</Id><Nummer>280018</Nummer><Omschrijving>EHV: Het menselijk lichaam</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>794</Id><Nummer>10050</Nummer><Omschrijving>starttraining gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>795</Id><Nummer>10052</Nummer><Omschrijving>starttraining 6-7 jr gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>796</Id><Nummer>10054</Nummer><Omschrijving>starttraining 7-11 jr gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>797</Id><Nummer>10056</Nummer><Omschrijving>starttraining 10-14 jr gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>798</Id><Nummer>10058</Nummer><Omschrijving>starttraining 14-17 jr gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>799</Id><Nummer>10060</Nummer><Omschrijving>starttraining 16+ gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>800</Id><Nummer>10062</Nummer><Omschrijving>starttraining waterwerk gevolg</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>801</Id><Nummer>10064</Nummer><Omschrijving>starttraining SMH gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>802</Id><Nummer>10051</Nummer><Omschrijving>stage gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>803</Id><Nummer>10053</Nummer><Omschrijving>stage 6-7 jr gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>804</Id><Nummer>10055</Nummer><Omschrijving>stage 7-11 jr gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>805</Id><Nummer>10057</Nummer><Omschrijving>stage 10-14 jr gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>806</Id><Nummer>10059</Nummer><Omschrijving>stage 14-17 jr gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>807</Id><Nummer>10061</Nummer><Omschrijving>stage 16+ gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>808</Id><Nummer>10063</Nummer><Omschrijving>stage waterwerk gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>809</Id><Nummer>10065</Nummer><Omschrijving>stage SMH gevolgd</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>81</Id><Nummer>26001</Nummer><Omschrijving>BG CWO Jz1-I</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>82</Id><Nummer>26002</Nummer><Omschrijving>BG CWO Jz2-I</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>83</Id><Nummer>26003</Nummer><Omschrijving>BG CWO Jz1-II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>84</Id><Nummer>26004</Nummer><Omschrijving>BG CWO Jz2-II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>85</Id><Nummer>26005</Nummer><Omschrijving>BG CWO Jz1-III</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>86</Id><Nummer>26006</Nummer><Omschrijving>BG CWO Roeibt RbI/II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>88</Id><Nummer>26010</Nummer><Omschrijving>BG.CWO Kb I</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>89</Id><Nummer>26011</Nummer><Omschrijving>BG CWO Kb II</Omschrijving></Kwalificatie>
+<Kwalificatie><Id>9</Id><Nummer>20100</Nummer><Omschrijving>kamptraining 5-7 jr</Omschrijving></Kwalificatie>
+</Kwalificaties>
+</KwalificatieList>

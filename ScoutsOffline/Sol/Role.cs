@@ -9,5 +9,23 @@ namespace ScoutsOffline.Sol
     {
         public string Id;
         public string Name;
+
+        public override string ToString()
+        {
+            return Name;
+        }
+
+        private List<int> parts
+        {
+            get { return Id.Split(',').Select(num => int.Parse(num)).ToList(); }
+        }
+
+        public int OrganisatieNr
+        {
+            get
+            {
+                return parts[3];
+            }
+        }
     }
 }

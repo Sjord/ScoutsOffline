@@ -15,7 +15,8 @@ namespace ScoutsOffline.Sol
         public const string BaseUrl = "https://sol.scouting.nl/";
         public delegate void MembersAvailable(List<Member> members, int step, int count);
 
-        List<Role> roles = null;
+        public List<Role> roles = null;
+        public string userId = null;
 
         public ScoutsOnLine()
         {
@@ -37,6 +38,26 @@ namespace ScoutsOffline.Sol
             {
                 this.roles = GetRoles(response);
             }
+            if (this.userId == null)
+            {
+                this.userId = GetUserId(response);
+            }
+        }
+
+        private string GetUserId(Response response)
+        {
+            if (this.roles != null && this.roles.Count > 0)
+            {
+                return GetUserId(this.roles.First());
+            }
+            return null;
+        }
+
+        private string GetUserId(Role role)
+        {
+            var roleId = role.Id;
+            var parts = roleId.Split(',');
+            return parts[1];
         }
 
         public List<Role> GetRoles(Response response) 
@@ -112,7 +133,7 @@ namespace ScoutsOffline.Sol
             return ParseFilterTable(response);
         }
 
-        private void SwitchRole(Role role)
+        public void SwitchRole(Role role)
         {
             var postData = new Dictionary<string, object>
             {
@@ -124,6 +145,25 @@ namespace ScoutsOffline.Sol
             };
             var request = new PostRequest(ResolveUrl("/index.php"), postData);
             httpBrowser.DoRequest(request);
+        }
+
+        public void AddQualification(Member subject, Model.Kwalificatie kwalificatie, DateTime datum, Member examinator)
+        {
+            var postData = new Dictionary<string, object>
+            {
+                {"task", "tr_qualification"},
+                {"action", "add_post"},
+                {"button", ""},
+                {"per_id", subject.Lidnummer},
+                {"qua_org_id", examinator.Organisatienummer},
+                {"cqua_id", kwalificatie.Id},
+                {"qua_examinator_id", examinator.Lidnummer},
+                {"qua_dt_day", datum.Day},
+                {"qua_dt_month", datum.Month},
+                {"qua_dt_year", datum.Year},
+            };
+            var request = new PostRequest(ResolveUrl("/index.php"), postData);
+            var response = httpBrowser.DoRequest(request);
         }
 
         private List<Member> ParseFilterTable(Response response)
