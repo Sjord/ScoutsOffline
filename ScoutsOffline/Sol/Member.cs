@@ -41,19 +41,16 @@ namespace ScoutsOffline.Sol
 
         public bool Selected { get; set; }
 
-        private IEnumerable<PropertyInfo> GetSearchProperties()
-        {
-            return this.GetType().GetProperties().Where(p => p.Name.StartsWith("Lid"));
-        }
+        private static MemberType MemberType = new MemberType();
 
         private string allProperties = null;
 
         private string ConcatAllProperties()
         {
             StringBuilder result = new StringBuilder();
-            foreach (var property in GetSearchProperties())
+            foreach (var property in MemberType.SearchProperties)
             {
-                var value = property.GetValue(this, null) as string;
+                var value = property.Get(this);
                 if (value != null)
                 {
                     result.Append(value);
@@ -85,9 +82,9 @@ namespace ScoutsOffline.Sol
                 return false;
             }
 
-            foreach (var property in GetSearchProperties())
+            foreach (var property in MemberType.SearchProperties)
             {
-                var value = property.GetValue(this, null) as string;
+                var value = property.Get(this);
                 if (value != null)
                 {
                     if (Contains(value, searchText))
@@ -101,7 +98,7 @@ namespace ScoutsOffline.Sol
 
         private bool Contains(string haystack, string needle)
         {
-            return -1 != haystack.IndexOf(needle, StringComparison.CurrentCultureIgnoreCase);
+            return -1 != haystack.IndexOf(needle, StringComparison.OrdinalIgnoreCase);
         }
 
         public override int GetHashCode()

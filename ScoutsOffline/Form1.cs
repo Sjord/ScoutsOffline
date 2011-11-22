@@ -9,6 +9,8 @@ using System.Windows.Forms;
 using ScoutsOffline.Sol;
 using System.Diagnostics;
 using ScoutsOffline.Model;
+using System.Threading;
+using System.Globalization;
 
 namespace ScoutsOffline
 {
@@ -25,7 +27,7 @@ namespace ScoutsOffline
         {
             base.OnShown(e);
 
-            /*/
+            //*/
             var username = "Sjoerder";
             repository = new UserModelRepository(username);
             FilterDataSource();
@@ -79,9 +81,6 @@ namespace ScoutsOffline
                 dataGridView1.Invoke(new MethodInvoker(delegate {
                     dataGridView1.DataSource = null;
                     FilterDataSource();
-
-                    // For performance
-                    dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
                 }));
             }
             if (progressBar1.InvokeRequired)
@@ -133,10 +132,16 @@ namespace ScoutsOffline
                     source = this.repository.Model.MemberList.ToList();
                 }
                 var keywords = searchtext.Split(new [] {' '}, StringSplitOptions.RemoveEmptyEntries);
+
+                var stopwatch = Stopwatch.StartNew();
                 newSource = source.Where(m => m.Matches(keywords)).ToList();
+                stopwatch.Stop();
+                Debug.WriteLine(stopwatch.ElapsedMilliseconds);
+
                 _previousSearchValue = searchtext;
             }
             dataGridView1.DataSource = newSource;
+
             ResultCount.Text = string.Format("{0} resultaten", newSource.Count);
         }
 
@@ -177,6 +182,19 @@ namespace ScoutsOffline
         {
             var kwali = new Kwalificatie(repository, sol);
             kwali.Show();
+        }
+
+        private void dataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            // For performance
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            dataGridView1.AutoGenerateColumns = false;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("nl-NL");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("nl-NL");
         }
     }
 }

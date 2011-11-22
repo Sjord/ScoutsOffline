@@ -33,21 +33,21 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.MarkeerLid = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.ResultCount = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.kwalificatiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toekennenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.MarkeerLid = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // SearchBox
@@ -75,6 +75,7 @@
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
+            this.dataGridView1.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridView1_DataBindingComplete);
             // 
             // progressBar1
             // 
@@ -109,26 +110,6 @@
             // 
             this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.menuStrip1);
             this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStrip1);
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MarkeerLid});
-            this.toolStrip1.Location = new System.Drawing.Point(3, 24);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(33, 25);
-            this.toolStrip1.TabIndex = 0;
-            // 
-            // MarkeerLid
-            // 
-            this.MarkeerLid.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MarkeerLid.Image = ((System.Drawing.Image)(resources.GetObject("MarkeerLid.Image")));
-            this.MarkeerLid.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MarkeerLid.Name = "MarkeerLid";
-            this.MarkeerLid.Size = new System.Drawing.Size(23, 22);
-            this.MarkeerLid.Text = "Markeer geselecteerd lid";
-            this.MarkeerLid.Click += new System.EventHandler(this.MarkeerLid_Click);
             // 
             // statusStrip1
             // 
@@ -167,9 +148,29 @@
             // toekennenToolStripMenuItem
             // 
             this.toekennenToolStripMenuItem.Name = "toekennenToolStripMenuItem";
-            this.toekennenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.toekennenToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.toekennenToolStripMenuItem.Text = "Toekennen";
             this.toekennenToolStripMenuItem.Click += new System.EventHandler(this.toekennenToolStripMenuItem_Click);
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MarkeerLid});
+            this.toolStrip1.Location = new System.Drawing.Point(3, 24);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(33, 25);
+            this.toolStrip1.TabIndex = 0;
+            // 
+            // MarkeerLid
+            // 
+            this.MarkeerLid.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MarkeerLid.Image = ((System.Drawing.Image)(resources.GetObject("MarkeerLid.Image")));
+            this.MarkeerLid.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MarkeerLid.Name = "MarkeerLid";
+            this.MarkeerLid.Size = new System.Drawing.Size(23, 22);
+            this.MarkeerLid.Text = "Markeer geselecteerd lid";
+            this.MarkeerLid.Click += new System.EventHandler(this.MarkeerLid_Click);
             // 
             // Form1
             // 
@@ -180,6 +181,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "ScoutsOffLine";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.toolStripContainer1.BottomToolStripPanel.ResumeLayout(false);
             this.toolStripContainer1.BottomToolStripPanel.PerformLayout();
@@ -189,12 +191,12 @@
             this.toolStripContainer1.TopToolStripPanel.PerformLayout();
             this.toolStripContainer1.ResumeLayout(false);
             this.toolStripContainer1.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }

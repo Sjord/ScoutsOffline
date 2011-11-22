@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FastReflection">
+      <HintPath>FastReflection\FastReflection.dll</HintPath>
+    </Reference>
     <Reference Include="HtmlAgilityPack">
       <HintPath>HtmlAgilityPack\HtmlAgilityPack.dll</HintPath>
     </Reference>
@@ -92,6 +95,7 @@
     <Compile Include="Sol\FakeScoutsOnLine.cs" />
     <Compile Include="Sol\Member.cs" />
     <Compile Include="Sol\MembersCsv.cs" />
+    <Compile Include="Sol\MemberType.cs" />
     <Compile Include="Sol\Role.cs" />
     <Compile Include="Sol\ScoutsOnLine.cs" />
     <EmbeddedResource Include="Form1.resx">
