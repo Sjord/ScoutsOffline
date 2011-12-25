@@ -87,17 +87,18 @@
     <Compile Include="PwdHashSharp\DomainExtractor.cs" />
     <Compile Include="PwdHashSharp\PasswordHasher.cs" />
     <Compile Include="PwdHashSharp\PwdHashSharp.cs" />
+    <Compile Include="Sol\AuthenticateResponse.cs" />
     <Compile Include="Sol\Authenticator.cs" />
     <Compile Include="Http\Browser.cs" />
     <Compile Include="Http\PostRequest.cs" />
     <Compile Include="Http\Request.cs" />
     <Compile Include="Sol\CsvConverter.cs" />
-    <Compile Include="Sol\FakeScoutsOnLine.cs" />
     <Compile Include="Sol\Member.cs" />
     <Compile Include="Sol\MembersCsv.cs" />
     <Compile Include="Sol\MemberType.cs" />
     <Compile Include="Sol\Role.cs" />
     <Compile Include="Sol\ScoutsOnLine.cs" />
+    <Compile Include="Sol\SolResponse.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

@@ -40,6 +40,9 @@
             this.toekennenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.MarkeerLid = new System.Windows.Forms.ToolStripButton();
+            this.selectieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.selecteerNietsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.selecteerAllesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -130,6 +133,7 @@
             // 
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.selectieToolStripMenuItem,
             this.kwalificatiesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -148,7 +152,7 @@
             // toekennenToolStripMenuItem
             // 
             this.toekennenToolStripMenuItem.Name = "toekennenToolStripMenuItem";
-            this.toekennenToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.toekennenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.toekennenToolStripMenuItem.Text = "Toekennen";
             this.toekennenToolStripMenuItem.Click += new System.EventHandler(this.toekennenToolStripMenuItem_Click);
             // 
@@ -171,6 +175,29 @@
             this.MarkeerLid.Size = new System.Drawing.Size(23, 22);
             this.MarkeerLid.Text = "Markeer geselecteerd lid";
             this.MarkeerLid.Click += new System.EventHandler(this.MarkeerLid_Click);
+            // 
+            // selectieToolStripMenuItem
+            // 
+            this.selectieToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.selecteerNietsToolStripMenuItem,
+            this.selecteerAllesToolStripMenuItem});
+            this.selectieToolStripMenuItem.Name = "selectieToolStripMenuItem";
+            this.selectieToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.selectieToolStripMenuItem.Text = "Selectie";
+            // 
+            // selecteerNietsToolStripMenuItem
+            // 
+            this.selecteerNietsToolStripMenuItem.Name = "selecteerNietsToolStripMenuItem";
+            this.selecteerNietsToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.selecteerNietsToolStripMenuItem.Text = "Selecteer niets";
+            this.selecteerNietsToolStripMenuItem.Click += new System.EventHandler(this.selecteerNietsToolStripMenuItem_Click);
+            // 
+            // selecteerAllesToolStripMenuItem
+            // 
+            this.selecteerAllesToolStripMenuItem.Name = "selecteerAllesToolStripMenuItem";
+            this.selecteerAllesToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.selecteerAllesToolStripMenuItem.Text = "Selecteer alles";
+            this.selecteerAllesToolStripMenuItem.Click += new System.EventHandler(this.selecteerAllesToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -214,6 +241,9 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem kwalificatiesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toekennenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem selectieToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem selecteerNietsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem selecteerAllesToolStripMenuItem;
     }
 }
 

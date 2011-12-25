@@ -12,84 +12,24 @@ namespace ScoutsOffline.Sol
     public class ScoutsOnLine
     {
         private Browser httpBrowser;
-        public const string BaseUrl = "https://sol.scouting.nl/";
+        public string BaseUrl { get; private set ; }
         public delegate void MembersAvailable(List<Member> members, int step, int count);
 
-        public List<Role> roles = null;
-        public string userId = null;
+        private List<Role> roles = null;
 
-        public ScoutsOnLine()
+        public ScoutsOnLine(string omgeving)
         {
             httpBrowser = new Browser();
+            this.BaseUrl = string.Format("https://{0}/", omgeving);
         }
 
-        public bool Authenticate(string username, string password)
+        public AuthenticateResponse Authenticate(string username, string password)
         {
             var authenticator = new Authenticator(httpBrowser);
             var response = authenticator.Authenticate(username, password);
-            OnResponse(response);
-            var cookie = httpBrowser.GetCookie(BaseUrl, "SOL_LOGGED_IN");
-            return cookie.Value == "1";
-        }
-
-        public void OnResponse(Response response)
-        {
-            if (this.roles == null)
-            {
-                this.roles = GetRoles(response);
-            }
-            if (this.userId == null)
-            {
-                this.userId = GetUserId(response);
-            }
-        }
-
-        private string GetUserId(Response response)
-        {
-            if (this.roles != null && this.roles.Count > 0)
-            {
-                return GetUserId(this.roles.First());
-            }
-            return null;
-        }
-
-        private string GetUserId(Role role)
-        {
-            var roleId = role.Id;
-            var parts = roleId.Split(',');
-            return parts[1];
-        }
-
-        public List<Role> GetRoles(Response response) 
-        {
-            var document = new HtmlDocument();
-            document.LoadHtml(response.Content);
-            var select = document.DocumentNode.SelectSingleNode("//select[@name='role_id']");
-            if (select == null)
-            {
-                return null;
-            }
-            var options = select.ChildNodes;
-            List<Role> roles = new List<Role>();
-            Role role = null;
-            foreach (var option in options)
-            {
-                if (option.Name == "option")
-                {
-                    role = new Role();
-                    role.Id = option.GetAttributeValue("value", null);
-                    roles.Add(role);
-                }
-                if (option.NodeType == HtmlNodeType.Text)
-                {
-                    if (role != null)
-                    {
-                        role.Name = option.InnerText;
-                    }
-                }
-            }
-            return roles;
-            
+            var authResponse = new AuthenticateResponse(response);
+            this.roles = authResponse.Roles;
+            return authResponse;
         }
 
         public void StartGetMembers(MembersAvailable callback)
@@ -129,7 +69,6 @@ namespace ScoutsOffline.Sol
         {
             var request = new Request(ResolveUrl("index.php?task=ma_person&action=list"));
             var response = httpBrowser.DoRequest(request);
-            OnResponse(response);
             return ParseFilterTable(response);
         }
 

@@ -43,5 +43,10 @@ namespace ScoutsOffline.Http
                 result.Content = reader.ReadToEnd();
             return result;
         }
+
+        public Cookie GetCookie(string cookieName)
+        {
+            return ((HttpWebResponse)this.response).Cookies[cookieName];
+        }
     }
 }

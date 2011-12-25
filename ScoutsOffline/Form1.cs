@@ -27,7 +27,7 @@ namespace ScoutsOffline
         {
             base.OnShown(e);
 
-            //*/
+            /*/
             var username = "Sjoerder";
             repository = new UserModelRepository(username);
             FilterDataSource();
@@ -44,8 +44,9 @@ namespace ScoutsOffline
         {
             ((Login)sender).Hide();
 
-            this.sol = new ScoutsOnLine();
-            if (sol.Authenticate(eArgs.username, eArgs.password))
+            this.sol = new ScoutsOnLine(eArgs.omgeving);
+            var auth = sol.Authenticate(eArgs.username, eArgs.password);
+            if (auth.LoggedIn)
             {
                 var username = eArgs.username;
                 repository = new UserModelRepository(username);
@@ -55,8 +56,8 @@ namespace ScoutsOffline
                 var getAllMembers = new GetAllMembersDelegate(GetAllMembers);
                 getAllMembers.BeginInvoke(sol, null, null);
 
-                repository.Model.RoleList = new RoleList(sol.roles);
-                repository.Model.UserId = sol.userId;
+                repository.Model.RoleList = new RoleList(auth.Roles);
+                repository.Model.UserId = auth.UserId;
             }
             else
             {
@@ -195,6 +196,23 @@ namespace ScoutsOffline
         {
             Thread.CurrentThread.CurrentCulture = new CultureInfo("nl-NL");
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("nl-NL");
+        }
+
+        private void selecteerNietsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (var member in this.repository.Model.MemberList.SelectedMembers) {
+                member.Selected = false;
+            }
+            dataGridView1.Refresh();
+        }
+
+        private void selecteerAllesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (var member in this.repository.Model.MemberList.Members)
+            {
+                member.Selected = true;
+            }
+            dataGridView1.Refresh();
         }
     }
 }
