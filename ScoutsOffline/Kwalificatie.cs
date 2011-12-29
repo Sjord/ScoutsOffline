@@ -44,11 +44,20 @@ namespace ScoutsOffline
         {
             var role = (Role) RollenCombo.SelectedItem;
             ExaminatorCombo.DataSource = repository.Model.MemberList.Where(m => m.Organisatienummer == role.OrganisatieNr.ToString()).ToList();
+            ExaminatorCombo.Items.Insert(0, string.Empty);
         }
 
         private void Toekennen_Click(object sender, EventArgs e)
         {
+            RollenCombo.Enabled = false;
+            KwalificatieCombo.Enabled = false;
+            dateTimePicker1.Enabled = false;
+            ExaminatorCombo.Enabled = false;
             Toekennen.Enabled = false;
+
+            progressBar1.Maximum = repository.Model.MemberList.SelectedMembers.Count;
+            progressBar1.Value = 0;
+
             sol.SwitchRole((Role)RollenCombo.SelectedItem);
             foreach (var member in repository.Model.MemberList.SelectedMembers)
             {
@@ -57,7 +66,9 @@ namespace ScoutsOffline
                     (Model.Kwalificatie) KwalificatieCombo.SelectedItem, 
                     dateTimePicker1.Value, 
                     (Member) ExaminatorCombo.SelectedItem);
+                progressBar1.Value++;
             }
+
             this.Close();
         }
     }

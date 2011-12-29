@@ -25,7 +25,7 @@ namespace ScoutsOffline.Sol
 
         public AuthenticateResponse Authenticate(string username, string password)
         {
-            var authenticator = new Authenticator(httpBrowser);
+            var authenticator = new Authenticator(httpBrowser, this.BaseUrl);
             var response = authenticator.Authenticate(username, password);
             var authResponse = new AuthenticateResponse(response);
             this.roles = authResponse.Roles;
@@ -51,14 +51,21 @@ namespace ScoutsOffline.Sol
                 {"action", "perform"},
                 {"button", "post"},
                 {"sel_id", "1216"},
-                //{"export_type", "1"},
+                {"export_type", "1"},
                 {"usr_cse_id", "3"},
+                {"sort_field[0][field_nm]", ""},
+                {"group_field[0]", ""},
                 //{"submit", "Uitvoeren"},
             };
             var request = new PostRequest(ResolveUrl("index.php"), postData);
             //var request = new Request(ResolveUrl("index.php?task=sel_selection&action=perform&button=post&sel_id=1216"));
             var response = httpBrowser.DoRequest(request);
             var contents = response.Content;
+
+            if (!contents.StartsWith("\"Lidnummer\","))
+            {
+                Error(response, "Expected \"Lidnummer\" not found");
+            }
 
             var csvReader = new CsvConverter(contents);
             var membersCsv = new MembersCsv();
@@ -83,7 +90,8 @@ namespace ScoutsOffline.Sol
                 {"role_id", role.Id},
             };
             var request = new PostRequest(ResolveUrl("/index.php"), postData);
-            httpBrowser.DoRequest(request);
+            var response = httpBrowser.DoRequest(request);
+            CheckNoticeMessage(response, "Rol gewisseld naar");
         }
 
         public void AddQualification(Member subject, Model.Kwalificatie kwalificatie, DateTime datum, Member examinator)
@@ -103,6 +111,50 @@ namespace ScoutsOffline.Sol
             };
             var request = new PostRequest(ResolveUrl("/index.php"), postData);
             var response = httpBrowser.DoRequest(request);
+            CheckNoticeMessage(response, "Kwalificatie(s) toegekend");
+        }
+
+        private void CheckNoticeMessage(Response response, string p)
+        {
+            var messages = GetNoticeMessages(response.Content);
+            foreach (var message in messages)
+            {
+                if (message.StartsWith(p))
+                {
+                    return;
+                }
+            }
+
+            // Error
+            var exMsg = string.Format("Expected message \"{0}\" not found", p);
+            Error(response, exMsg);            
+        }
+
+        private void Error(Response response, string message)
+        {
+            var filename = SaveResponse(response);
+            var exMsg = string.Format("{0}. Response saved to {1}.", message, filename);
+            throw new SolResponseException(exMsg);
+        }
+
+        private string SaveResponse(Response response)
+        {
+            var filename = System.IO.Path.GetTempFileName();
+            using (var writer = new StreamWriter(filename))
+            {
+                writer.Write(response.Content);
+            }
+            return filename;
+        }
+
+        // check for <div class="notice_msg">Kwalificatie(s) toegekend</div>
+        private IEnumerable<string> GetNoticeMessages(string html)
+        {
+            var document = new HtmlDocument();
+            document.LoadHtml(html);
+            var messages = document.DocumentNode.SelectNodes("//div[@class='notice_msg']");
+            if (messages == null) return Enumerable.Empty<string>();
+            return messages.Select(node => node.InnerText);
         }
 
         private List<Member> ParseFilterTable(Response response)

@@ -99,6 +99,7 @@
     <Compile Include="Sol\Role.cs" />
     <Compile Include="Sol\ScoutsOnLine.cs" />
     <Compile Include="Sol\SolResponse.cs" />
+    <Compile Include="Sol\SolResponseException.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

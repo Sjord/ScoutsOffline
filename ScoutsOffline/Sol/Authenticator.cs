@@ -9,15 +9,18 @@ namespace ScoutsOffline.Sol
     class Authenticator
     {
         private Browser browser;
+        private string baseUrl;
 
-        public Authenticator(Browser browser)
+        public Authenticator(Browser browser, string baseUrl)
         {
             this.browser = browser;
+            this.baseUrl = baseUrl;
         }
 
         public Response Authenticate(string username, string password)
         {
-            var url = "https://sol.scouting.nl/index.php?task=rs_user&action=login&button=";
+            // var url = "https://sol.scouting.nl/index.php?task=rs_user&action=login&button=";
+            var url = this.baseUrl;
             var postData = new Dictionary<string, object>
             {
                 {"task", "rs_user"},

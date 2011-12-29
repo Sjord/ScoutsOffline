@@ -214,5 +214,10 @@ namespace ScoutsOffline
             }
             dataGridView1.Refresh();
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.repository.Store();
+        }
     }
 }

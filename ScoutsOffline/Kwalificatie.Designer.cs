@@ -39,6 +39,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.LedenListBox = new System.Windows.Forms.ListBox();
             this.Toekennen = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // label1
@@ -139,11 +140,19 @@
             this.Toekennen.UseVisualStyleBackColor = true;
             this.Toekennen.Click += new System.EventHandler(this.Toekennen_Click);
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(202, 384);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(135, 23);
+            this.progressBar1.TabIndex = 11;
+            // 
             // Kwalificatie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(363, 419);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.Toekennen);
             this.Controls.Add(this.LedenListBox);
             this.Controls.Add(this.label5);
@@ -176,5 +185,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ListBox LedenListBox;
         private System.Windows.Forms.Button Toekennen;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
