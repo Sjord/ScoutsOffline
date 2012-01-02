@@ -26,6 +26,10 @@ namespace ScoutsOffline.Model
                 }
                 return _model;
             }
+            set
+            {
+                _model = value;
+            }
         }
 
         public Repository(string file)

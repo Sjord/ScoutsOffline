@@ -11,6 +11,10 @@ namespace ScoutsOffline.Model
     {
         public UserModelRepository(string username) : base(GetFilename(username))
         {
+            if (this.Model == null)
+            {
+                this.Model = new StoredModel();
+            }
         }
 
         private static string GetFilename(string username)
