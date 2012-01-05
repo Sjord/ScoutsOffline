@@ -14,6 +14,7 @@
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -26,7 +27,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.0</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -108,6 +108,9 @@
     <Compile Include="Http\PostRequest.cs" />
     <Compile Include="Http\Request.cs" />
     <Compile Include="Sol\CsvConverter.cs" />
+    <Compile Include="Sol\GetMembersWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Sol\Member.cs" />
     <Compile Include="Sol\MembersCsv.cs" />
     <Compile Include="Sol\MemberType.cs" />

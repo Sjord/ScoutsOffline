@@ -188,7 +188,7 @@
             this.MarkeerLid});
             this.toolStrip1.Location = new System.Drawing.Point(3, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(87, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(56, 25);
             this.toolStrip1.TabIndex = 0;
             // 
             // Opslaan

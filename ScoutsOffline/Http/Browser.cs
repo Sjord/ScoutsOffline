@@ -8,6 +8,8 @@ namespace ScoutsOffline.Http
     {
         private CookieContainer cookies;
 
+        private int timeout = 10000;
+
         public Browser()
         {
             cookies = new CookieContainer();
@@ -17,6 +19,8 @@ namespace ScoutsOffline.Http
         {
             var webRequest = (HttpWebRequest)WebRequest.Create(request.Url);
             webRequest.CookieContainer = cookies;
+            webRequest.Timeout = this.timeout;
+
             if (request is PostRequest)
             {
                 webRequest.Method = "POST";

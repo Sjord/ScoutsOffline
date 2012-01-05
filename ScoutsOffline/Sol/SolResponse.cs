@@ -17,6 +17,7 @@ namespace ScoutsOffline.Sol
 
         private string GetUserId(IEnumerable<Role> roles)
         {
+            if (roles == null) return null;
             return GetUserId(roles.First());
         }
 

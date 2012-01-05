@@ -53,8 +53,11 @@ namespace ScoutsOffline
                 FilterDataSource();
 
                 progressBar1.Style = ProgressBarStyle.Marquee;
-                var getAllMembers = new GetAllMembersDelegate(GetAllMembers);
-                getAllMembers.BeginInvoke(sol, null, null);
+
+                var worker = new GetMembersWorker(sol);
+                worker.ProgressChanged += OnMembersProgressChanged;
+                worker.RunWorkerCompleted += OnMembersCompleted;
+                worker.RunWorkerAsync();
 
                 repository.Model.RoleList = new RoleList(auth.Roles);
                 repository.Model.UserId = auth.UserId;
@@ -65,35 +68,33 @@ namespace ScoutsOffline
             }
         }
 
-        private delegate void GetAllMembersDelegate(ScoutsOnLine sol);
-
-        private void GetAllMembers(ScoutsOnLine sol)
+        private void OnMembersProgressChanged(object sender, ProgressChangedEventArgs eventArgs)
         {
-            sol.StartGetMembers(AddMembers);
+            var percent = eventArgs.ProgressPercentage;
+            progressBar1.Style = ProgressBarStyle.Continuous;
+            progressBar1.Value = percent;
+
+            var exception = eventArgs.UserState as Exception;
+            if (exception != null)
+            {
+                // TODO show exception
+                return;
+            }
+
+            var members = eventArgs.UserState as List<Member>;
+            if (members != null)
+            {
+                repository.Model.MemberList.UpdateWith(members);
+                repository.Store();
+
+                dataGridView1.DataSource = null;
+                FilterDataSource();
+            }
         }
 
-        private void AddMembers(List<Member> newMembers, int step, int count)
+        private void OnMembersCompleted(object sender, RunWorkerCompletedEventArgs eventArgs)
         {
-            repository.Model.MemberList.UpdateWith(newMembers);
-            repository.Store();
-            
-            if (dataGridView1.InvokeRequired)
-            {
-                dataGridView1.Invoke(new MethodInvoker(delegate {
-                    dataGridView1.DataSource = null;
-                    FilterDataSource();
-                }));
-            }
-            if (progressBar1.InvokeRequired)
-            {
-                progressBar1.Invoke(new MethodInvoker(delegate
-                {
-                    progressBar1.Style = ProgressBarStyle.Continuous;
-                    progressBar1.Maximum = count;
-                    progressBar1.Value = step + 1;
-                    progressBar1.Visible = step < count - 1;
-                }));
-            }
+            progressBar1.Visible = false;
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

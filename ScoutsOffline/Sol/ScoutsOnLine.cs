@@ -11,11 +11,13 @@ namespace ScoutsOffline.Sol
 {
     public class ScoutsOnLine
     {
+        private object lockObject = new object();
+
         private Browser httpBrowser;
         public string BaseUrl { get; private set ; }
         public delegate void MembersAvailable(List<Member> members, int step, int count);
 
-        private List<Role> roles = null;
+        internal List<Role> roles = null;
 
         public ScoutsOnLine(string omgeving)
         {
@@ -79,6 +81,7 @@ namespace ScoutsOffline.Sol
             return ParseFilterTable(response);
         }
 
+        // TODO maak deze private en voeg Role parameter toe aan de functies die deze nodig hebben.
         public void SwitchRole(Role role)
         {
             var postData = new Dictionary<string, object>
@@ -211,6 +214,15 @@ namespace ScoutsOffline.Sol
                 return uri.ToString();
             }
             return href;
+        }
+
+        public List<Member> GetSelection(Role role)
+        {
+            lock (lockObject)
+            {
+                SwitchRole(role);
+                return GetSelection();
+            }
         }
     }
 }
