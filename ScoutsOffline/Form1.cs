@@ -103,7 +103,7 @@ namespace ScoutsOffline
             var members = (List<Member>)dataGridView1.DataSource;
             var member = members[e.RowIndex];
             var lidnummer = member.Lidnummer;
-            var link = string.Format("https://sol.scouting.nl/index.php?task=ma_person&action=view&button=btn_detail&per_id={0}", lidnummer);
+            var link = string.Format("https://sol.scouting.nl/ma/person/{0}", lidnummer);
             System.Diagnostics.Process.Start(link);
         }
 
