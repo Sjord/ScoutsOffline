@@ -8,13 +8,16 @@ namespace ScoutsOffline.Http
 {
     public class PostRequest : Request
     {
-        private Dictionary<string, object> postData;
-        public PostRequest(string url, Dictionary<string, object> postData) : base(url)
+        private FormValueCollection postData;
+
+        public PostRequest(string url, FormValueCollection postData)
+            : base(url)
         {
             this.postData = postData;
         }
 
-        public string GetContent() {
+        public string GetContent()
+        {
             List<string> pairs = new List<string>();
             foreach (var keyvalue in postData)
             {

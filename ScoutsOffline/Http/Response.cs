@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Net;
-using System.IO;
-
-namespace ScoutsOffline.Http
+﻿namespace ScoutsOffline.Http
 {
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Linq;
+    using System.Net;
+    using System.Text;
+    using HtmlAgilityPack;
+
     public class Response
     {
-        private WebResponse response;
-        private Stream _stream;
+        private readonly WebResponse _response;
 
         private Response()
         {
@@ -18,10 +17,9 @@ namespace ScoutsOffline.Http
 
         public Response(WebResponse response)
         {
-            this.response = response;
-            this._stream = response.GetResponseStream();
+            _response = response;
 
-            using (var stream = this.response.GetResponseStream())
+            using (var stream = _response.GetResponseStream())
             using (var reader = new StreamReader(stream, Encoding.UTF8))
             {
                 Content = reader.ReadToEnd();
@@ -30,7 +28,9 @@ namespace ScoutsOffline.Http
 
         public string Content;
 
-        internal void Save(string path)
+        public string ResponseUri { get { return _response.ResponseUri.ToString(); } }
+
+            internal void Save(string path)
         {
             using (var writer = new StreamWriter(path))
                 writer.Write(Content);
@@ -46,7 +46,15 @@ namespace ScoutsOffline.Http
 
         public Cookie GetCookie(string cookieName)
         {
-            return ((HttpWebResponse)this.response).Cookies[cookieName];
+            return ((HttpWebResponse)_response).Cookies[cookieName];
+        }
+
+        public IEnumerable<HtmlForm> GetForms()
+        {
+            var doc = new HtmlDocument();
+            doc.LoadHtml(Content);
+            var forms = doc.DocumentNode.SelectNodes("//form");
+            return forms.Select(HtmlForm.FromNode);
         }
     }
 }

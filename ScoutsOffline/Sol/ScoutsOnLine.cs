@@ -47,7 +47,7 @@ namespace ScoutsOffline.Sol
 
         public List<Member> GetSelection()
         {
-            var postData = new Dictionary<string, object>()
+            var postData = new FormValueCollection
             {
                 {"task", "sel_selection"},
                 {"action", "perform"},
@@ -84,7 +84,7 @@ namespace ScoutsOffline.Sol
         // TODO maak deze private en voeg Role parameter toe aan de functies die deze nodig hebben.
         public void SwitchRole(Role role)
         {
-            var postData = new Dictionary<string, object>
+            var postData = new FormValueCollection
             {
                 {"task", "ma_function"},
                 {"action", "edit"},
@@ -99,7 +99,7 @@ namespace ScoutsOffline.Sol
 
         public void AddQualification(Member subject, Model.Kwalificatie kwalificatie, DateTime datum, Member examinator)
         {
-            var postData = new Dictionary<string, object>
+            var postData = new FormValueCollection
             {
                 {"task", "tr_qualification"},
                 {"action", "add_post"},

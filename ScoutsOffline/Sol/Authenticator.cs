@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using ScoutsOffline.Http;
-
-namespace ScoutsOffline.Sol
+﻿namespace ScoutsOffline.Sol
 {
+    using System.Linq;
+    using ScoutsOffline.Http;
+
     class Authenticator
     {
         private Browser browser;
@@ -19,21 +16,23 @@ namespace ScoutsOffline.Sol
 
         public Response Authenticate(string username, string password)
         {
-            // var url = "https://sol.scouting.nl/index.php?task=rs_user&action=login&button=";
-            var url = this.baseUrl;
-            var postData = new Dictionary<string, object>
-            {
-                {"task", "rs_user"},
-                {"action", "checkLogin"},
-                {"button", ""},
-                {"v", "check"},
-                {"referer", ""},
-                {"luser_name", username},
-                {"luser_password", password},
-                {"submit", "Log in"},
-            };
-            var loginRequest = new PostRequest(url, postData);
-            var response = browser.DoRequest(loginRequest);
+            var url = string.Format("{0}rs/user/", this.baseUrl);
+            var loginPageRequest = new Request(url);
+            var loginPageResponse = browser.DoRequest(loginPageRequest);
+
+            var formValues = loginPageResponse.GetForms().Single().Values;
+            formValues.Update("userid", username);
+
+            var loginPageSubmit = new PostRequest(url, formValues);
+            var openIdPage = browser.DoRequest(loginPageSubmit);
+
+            formValues = openIdPage.GetForms().Single().Values;
+            formValues.Update("openid_password", password);
+            formValues.Update("openid_action", "Login");
+
+            var openIdSubmit = new PostRequest(openIdPage.ResponseUri, formValues);
+            var response = browser.DoRequest(openIdSubmit);
+
             return response;
         }
     }

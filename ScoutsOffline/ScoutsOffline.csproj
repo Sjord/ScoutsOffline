@@ -75,6 +75,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Http\FormValueCollection.cs" />
+    <Compile Include="Http\HtmlForm.cs" />
     <Compile Include="Http\Response.cs" />
     <Compile Include="Kwalificatie.cs">
       <SubType>Form</SubType>
