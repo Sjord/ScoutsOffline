@@ -97,26 +97,6 @@ namespace ScoutsOffline.Sol
             CheckNoticeMessage(response, "Rol gewisseld naar");
         }
 
-        public void AddQualification(Member subject, Model.Kwalificatie kwalificatie, DateTime datum, Member examinator)
-        {
-            var postData = new FormValueCollection
-            {
-                {"task", "tr_qualification"},
-                {"action", "add_post"},
-                {"button", ""},
-                {"per_id", subject.Lidnummer},
-                {"qua_org_id", examinator.Organisatienummer},
-                {"cqua_id", kwalificatie.Id},
-                {"qua_examinator_id", examinator.Lidnummer},
-                {"qua_dt_day", datum.Day},
-                {"qua_dt_month", datum.Month},
-                {"qua_dt_year", datum.Year},
-            };
-            var request = new PostRequest(ResolveUrl("/index.php"), postData);
-            var response = httpBrowser.DoRequest(request);
-            CheckNoticeMessage(response, "Kwalificatie(s) toegekend");
-        }
-
         private void CheckNoticeMessage(Response response, string p)
         {
             var messages = GetNoticeMessages(response.Content);

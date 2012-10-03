@@ -78,12 +78,6 @@
     <Compile Include="Http\FormValueCollection.cs" />
     <Compile Include="Http\HtmlForm.cs" />
     <Compile Include="Http\Response.cs" />
-    <Compile Include="Kwalificatie.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Kwalificatie.Designer.cs">
-      <DependentUpon>Kwalificatie.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,8 +86,6 @@
     </Compile>
     <Compile Include="LoginClickEventArgs.cs" />
     <Compile Include="Model\IListContainer.cs" />
-    <Compile Include="Model\Kwalificatie.cs" />
-    <Compile Include="Model\KwalificatieList.cs" />
     <Compile Include="Model\MemberList.cs" />
     <Compile Include="Model\Repository.cs" />
     <Compile Include="Model\RoleList.cs" />
@@ -122,9 +114,6 @@
     <Compile Include="Sol\SolResponseException.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Kwalificatie.resx">
-      <DependentUpon>Kwalificatie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -147,45 +147,6 @@ namespace ScoutsOffline
             ResultCount.Text = string.Format("{0} resultaten", newSource.Count);
         }
 
-        private void MarkeerLid_Click(object sender, EventArgs e)
-        {
-            List<int> rowIndices = new List<int>();
-            foreach (DataGridViewCell cell in dataGridView1.SelectedCells)
-            {
-                var row = cell.RowIndex;
-                if (!rowIndices.Contains(row))
-                    rowIndices.Add(row);
-            }
-
-            var members = (List<Member>)dataGridView1.DataSource;
-            foreach (var index in rowIndices)
-            {
-                var member = members[index];
-                repository.Model.MemberList.ToggleSelect(member);
-            }
-            dataGridView1.Refresh();
-        }
-
-        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
-        {
-            var members = (List<Member>)dataGridView1.DataSource;
-            var member = members[e.RowIndex];
-            if (member.Selected)
-            {
-                e.CellStyle.BackColor = Color.LightYellow;
-            }
-            else
-            {
-                e.CellStyle.BackColor = Color.White;
-            }
-        }
-
-        private void toekennenToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var kwali = new Kwalificatie(repository, sol);
-            kwali.Show();
-        }
-
         private void dataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
             // For performance
@@ -197,28 +158,6 @@ namespace ScoutsOffline
         {
             Thread.CurrentThread.CurrentCulture = new CultureInfo("nl-NL");
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("nl-NL");
-        }
-
-        private void selecteerNietsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            foreach (var member in this.repository.Model.MemberList.SelectedMembers) {
-                member.Selected = false;
-            }
-            dataGridView1.Refresh();
-        }
-
-        private void selecteerAllesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            foreach (var member in this.repository.Model.MemberList.Members)
-            {
-                member.Selected = true;
-            }
-            dataGridView1.Refresh();
-        }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            this.repository.Store();
         }
     }
 }

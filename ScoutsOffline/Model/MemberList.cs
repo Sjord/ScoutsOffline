@@ -27,11 +27,6 @@ namespace ScoutsOffline.Model
             this.Members = allMembers.OrderBy(m => m.Lidachternaam).ThenBy(m => m.Lidvoornaam).ToList();
         }
 
-        internal void ToggleSelect(Member member)
-        {
-            member.Selected = !member.Selected;
-        }
-
         public List<Member> ToList()
         {
             return Members;
@@ -45,14 +40,6 @@ namespace ScoutsOffline.Model
         IEnumerator IEnumerable.GetEnumerator()
         {
             return Members.GetEnumerator();
-        }
-
-        public List<Member> SelectedMembers
-        {
-            get
-            {
-                return Members.Where(m => m.Selected).ToList();
-            }
         }
     }
 }

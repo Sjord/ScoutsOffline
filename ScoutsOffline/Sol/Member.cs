@@ -39,8 +39,6 @@ namespace ScoutsOffline.Sol
         public string Organisatie { get; set; }
         public string Organisatieplaats { get; set; }
 
-        public bool Selected { get; set; }
-
         private static MemberType MemberType = new MemberType();
 
         private string allProperties = null;

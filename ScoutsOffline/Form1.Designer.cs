@@ -28,30 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.SearchBox = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.ResultCount = new System.Windows.Forms.ToolStripStatusLabel();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.selectieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.selecteerNietsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.selecteerAllesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kwalificatiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toekennenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.Opslaan = new System.Windows.Forms.ToolStripButton();
-            this.MarkeerLid = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
-            this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // SearchBox
@@ -67,18 +54,17 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 32);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(625, 378);
+            this.dataGridView1.Size = new System.Drawing.Size(625, 427);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
-            this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             this.dataGridView1.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridView1_DataBindingComplete);
             // 
             // progressBar1
@@ -90,9 +76,9 @@
             // 
             // toolStripContainer1
             // 
-            this.toolStripContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.toolStripContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // toolStripContainer1.BottomToolStripPanel
             // 
@@ -103,17 +89,12 @@
             this.toolStripContainer1.ContentPanel.Controls.Add(this.SearchBox);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.progressBar1);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.dataGridView1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(649, 423);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(649, 472);
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.Size = new System.Drawing.Size(649, 494);
             this.toolStripContainer1.TabIndex = 3;
             this.toolStripContainer1.Text = "toolStripContainer1";
-            // 
-            // toolStripContainer1.TopToolStripPanel
-            // 
-            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.menuStrip1);
-            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStrip1);
             // 
             // statusStrip1
             // 
@@ -130,94 +111,12 @@
             this.ResultCount.Name = "ResultCount";
             this.ResultCount.Size = new System.Drawing.Size(0, 17);
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.selectieToolStripMenuItem,
-            this.kwalificatiesToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(649, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // selectieToolStripMenuItem
-            // 
-            this.selectieToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.selecteerNietsToolStripMenuItem,
-            this.selecteerAllesToolStripMenuItem});
-            this.selectieToolStripMenuItem.Name = "selectieToolStripMenuItem";
-            this.selectieToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.selectieToolStripMenuItem.Text = "Selectie";
-            // 
-            // selecteerNietsToolStripMenuItem
-            // 
-            this.selecteerNietsToolStripMenuItem.Name = "selecteerNietsToolStripMenuItem";
-            this.selecteerNietsToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.selecteerNietsToolStripMenuItem.Text = "Selecteer niets";
-            this.selecteerNietsToolStripMenuItem.Click += new System.EventHandler(this.selecteerNietsToolStripMenuItem_Click);
-            // 
-            // selecteerAllesToolStripMenuItem
-            // 
-            this.selecteerAllesToolStripMenuItem.Name = "selecteerAllesToolStripMenuItem";
-            this.selecteerAllesToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.selecteerAllesToolStripMenuItem.Text = "Selecteer alles";
-            this.selecteerAllesToolStripMenuItem.Click += new System.EventHandler(this.selecteerAllesToolStripMenuItem_Click);
-            // 
-            // kwalificatiesToolStripMenuItem
-            // 
-            this.kwalificatiesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toekennenToolStripMenuItem});
-            this.kwalificatiesToolStripMenuItem.Name = "kwalificatiesToolStripMenuItem";
-            this.kwalificatiesToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
-            this.kwalificatiesToolStripMenuItem.Text = "Kwalificaties";
-            // 
-            // toekennenToolStripMenuItem
-            // 
-            this.toekennenToolStripMenuItem.Name = "toekennenToolStripMenuItem";
-            this.toekennenToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.toekennenToolStripMenuItem.Text = "Toekennen";
-            this.toekennenToolStripMenuItem.Click += new System.EventHandler(this.toekennenToolStripMenuItem_Click);
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Opslaan,
-            this.MarkeerLid});
-            this.toolStrip1.Location = new System.Drawing.Point(3, 24);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(56, 25);
-            this.toolStrip1.TabIndex = 0;
-            // 
-            // Opslaan
-            // 
-            this.Opslaan.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.Opslaan.Image = ((System.Drawing.Image)(resources.GetObject("Opslaan.Image")));
-            this.Opslaan.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.Opslaan.Name = "Opslaan";
-            this.Opslaan.Size = new System.Drawing.Size(23, 22);
-            this.Opslaan.Text = "Opslaan";
-            this.Opslaan.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // MarkeerLid
-            // 
-            this.MarkeerLid.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MarkeerLid.Image = ((System.Drawing.Image)(resources.GetObject("MarkeerLid.Image")));
-            this.MarkeerLid.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MarkeerLid.Name = "MarkeerLid";
-            this.MarkeerLid.Size = new System.Drawing.Size(23, 22);
-            this.MarkeerLid.Text = "Markeer geselecteerd lid";
-            this.MarkeerLid.Click += new System.EventHandler(this.MarkeerLid_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(649, 493);
             this.Controls.Add(this.toolStripContainer1);
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "ScoutsOffLine";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -226,16 +125,10 @@
             this.toolStripContainer1.BottomToolStripPanel.PerformLayout();
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.ContentPanel.PerformLayout();
-            this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);
-            this.toolStripContainer1.TopToolStripPanel.PerformLayout();
             this.toolStripContainer1.ResumeLayout(false);
             this.toolStripContainer1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -246,17 +139,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton MarkeerLid;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel ResultCount;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem kwalificatiesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toekennenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem selectieToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem selecteerNietsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem selecteerAllesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripButton Opslaan;
     }
 }
 
